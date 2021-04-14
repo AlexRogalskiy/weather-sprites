@@ -51,8 +51,6 @@
 ## *Table of contents*
 
 - [*Description*](#description)
-- [*How to use*](#how-to-use)
-- [*Example*](#example)
 - [*Visitor stats*](#visitor-stats)
 - [*Licensing*](#licensing)
 - [*Authors*](#authors)
