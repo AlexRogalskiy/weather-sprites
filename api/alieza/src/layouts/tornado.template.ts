@@ -1,7 +1,7 @@
-import { SpriteLayoutOptions } from '../../../../core/typings/domain-types'
+import { SpriteTemplate } from '../../../../core/typings/domain-types'
 import { SpritePattern } from '../../../../core/typings/enum-types'
 
-const tornadoTemplate: Record<SpritePattern.tornado, SpriteLayoutOptions> = {
+const tornadoTemplate: Record<SpritePattern.tornado, SpriteTemplate> = {
     [SpritePattern.tornado]: {
         style: () => {
             return `

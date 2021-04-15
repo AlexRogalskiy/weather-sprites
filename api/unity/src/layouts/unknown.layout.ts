@@ -1,8 +1,8 @@
-import { SpriteLayoutOptions } from '../../../../core/typings/domain-types'
+import { SpriteTemplate } from '../../../../core/typings/domain-types'
 import { SpritePattern } from '../../../../core/typings/enum-types'
 
-const defaultLayout: Record<SpritePattern.default, SpriteLayoutOptions> = {
-    [SpritePattern.default]: {
+const unknownLayout: Record<SpritePattern.unknown, SpriteTemplate> = {
+    [SpritePattern.unknown]: {
         style: () => {
             return `
                         // color palette: https://coolors.co/212f45-fdac49-fcd422-fffafa
@@ -121,4 +121,4 @@ const defaultLayout: Record<SpritePattern.default, SpriteLayoutOptions> = {
     },
 }
 
-export default defaultLayout
+export default unknownLayout

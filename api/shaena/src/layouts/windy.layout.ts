@@ -1,7 +1,7 @@
 import { SpritePattern } from '../../../../core/typings/enum-types'
-import { SpriteLayoutOptions } from '../../../../core/typings/domain-types'
+import { SpriteTemplate } from '../../../../core/typings/domain-types'
 
-const windyLayout: Record<SpritePattern.windy, SpriteLayoutOptions> = {
+const windyLayout: Record<SpritePattern.windy, SpriteTemplate> = {
     [SpritePattern.windy]: {
         style: () => {
             return `

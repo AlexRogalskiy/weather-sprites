@@ -1,7 +1,7 @@
-import { SpriteLayoutOptions } from '../../../../core/typings/domain-types'
+import { SpriteTemplate } from '../../../../core/typings/domain-types'
 import { SpritePattern } from '../../../../core/typings/enum-types'
 
-const mistyLayout: Record<SpritePattern.misty, SpriteLayoutOptions> = {
+const mistyLayout: Record<SpritePattern.misty, SpriteTemplate> = {
     [SpritePattern.misty]: {
         style: () => {
             return `

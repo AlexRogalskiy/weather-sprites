@@ -1,7 +1,7 @@
-import { SpriteLayoutOptions } from '../../../../core/typings/domain-types'
+import { SpriteTemplate } from '../../../../core/typings/domain-types'
 import { SpritePattern } from '../../../../core/typings/enum-types'
 
-const sunnyLayout: Record<SpritePattern.sunny, SpriteLayoutOptions> = {
+const sunnyLayout: Record<SpritePattern.sunny, SpriteTemplate> = {
     [SpritePattern.sunny]: {
         style: () => {
             return `

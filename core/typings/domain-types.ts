@@ -1,15 +1,80 @@
 import { SpritePattern } from './enum-types'
+
+/**
+ * FormatOptions
+ * @desc Type representing format options
+ */
+export type FormatOptions = {
+    /**
+     * Theme width
+     */
+    readonly width?: string
+    /**
+     * Theme height
+     */
+    readonly height?: string
+}
+
+//--------------------------------------------------------------------------------------------------
+/**
+ * ThemeOptions
+ * @desc Type representing theme options
+ */
+export type ThemeOptions = {
+    /**
+     * Theme fill color
+     */
+    readonly fill?: string
+    /**
+     * Theme opacity
+     */
+    readonly opacity?: string
+    /**
+     * Theme background color
+     */
+    readonly bgColor?: string
+    /**
+     * Theme color pattern
+     */
+    readonly colorPattern?: string
+}
+
+//--------------------------------------------------------------------------------------------------
+/**
+ * AnimationOptions
+ * @desc Type representing animation options
+ */
+export type AnimationOptions = {
+    /**
+     * Animation type
+     */
+    readonly animation: string
+    /**
+     * Animation keyframes
+     */
+    readonly keyframes: string
+}
+
 //--------------------------------------------------------------------------------------------------
 /**
  * SpriteOptions
- * @desc Type representing sprite options
+ * @desc Type representing style options
  */
-export type SpriteOptions = {
-    width?: string
-    height?: string
-    fill?: string
-    opacity?: string
+export type StyleOptions = {
+    /**
+     * Style format options
+     */
+    readonly format: FormatOptions
+    /**
+     * Style theme options
+     */
+    readonly theme: ThemeOptions
+    /**
+     * Style animation options
+     */
+    readonly animation: AnimationOptions
 }
+
 //--------------------------------------------------------------------------------------------------
 /**
  * LayoutOptions
@@ -18,27 +83,30 @@ export type SpriteOptions = {
 export type LayoutOptions = {
     // empty
 }
+
 //--------------------------------------------------------------------------------------------------
 /**
- * SpriteLayoutOptions
- * @desc Type representing sprite layout options
+ * SpriteTemplate
+ * @desc Type representing sprite template
  */
-export type SpriteLayoutOptions = {
+export type SpriteTemplate = {
     /**
-     * Creates style by input {@link SpriteOptions}
-     * @param options initial input {@link SpriteOptions}
+     * Creates style by input {@link StyleOptions}
+     * @param options initial input {@link StyleOptions}
      */
-    readonly style: (options?: SpriteOptions) => string
+    readonly style: (options?: StyleOptions) => string
     /**
      * Creates layout by input {@link LayoutOptions}
      * @param options initial input {@link LayoutOptions}
      */
     readonly layout?: (options?: LayoutOptions) => string
 }
+
 //--------------------------------------------------------------------------------------------------
 /**
- * SpritePatternOperator
- * @desc Type representing sprite pattern operators
+ * SpriteTemplateRecord
+ * @desc Type representing sprite template record
  */
-export type SpritePatternOperator = Record<SpritePattern, SpriteLayoutOptions>
+export type SpriteTemplateRecord = Record<SpritePattern, SpriteTemplate>
+
 //--------------------------------------------------------------------------------------------------

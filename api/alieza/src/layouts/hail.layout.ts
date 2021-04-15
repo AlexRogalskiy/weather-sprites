@@ -1,7 +1,7 @@
-import { SpriteLayoutOptions } from '../../../../core/typings/domain-types'
+import { SpriteTemplate } from '../../../../core/typings/domain-types'
 import { SpritePattern } from '../../../../core/typings/enum-types'
 
-const hailLayout: Record<SpritePattern.hail, SpriteLayoutOptions> = {
+const hailLayout: Record<SpritePattern.hail, SpriteTemplate> = {
     [SpritePattern.hail]: {
         style: () => {
             return `

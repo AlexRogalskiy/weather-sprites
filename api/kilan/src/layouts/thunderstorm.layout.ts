@@ -1,7 +1,7 @@
-import { SpriteLayoutOptions } from '../../../../core/typings/domain-types'
+import { SpriteTemplate } from '../../../../core/typings/domain-types'
 import { SpritePattern } from '../../../../core/typings/enum-types'
 
-const thunderstormLayout: Record<SpritePattern.thunderstorm, SpriteLayoutOptions> = {
+const thunderstormLayout: Record<SpritePattern.thunderstorm, SpriteTemplate> = {
     [SpritePattern.thunderstorm]: {
         style: () => {
             return `

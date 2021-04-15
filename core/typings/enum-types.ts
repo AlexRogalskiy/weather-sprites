@@ -11,7 +11,6 @@ export enum SpritePattern {
     snowflake = 'snowflake',
     storm_moon = 'storm moon',
     storm_sun = 'storm sun',
-    // clear = 'clear',
     hail = 'hail',
     haze = 'haze',
     misty = 'misty',
@@ -33,5 +32,7 @@ export enum SpritePattern {
     heavy_rainy = 'heavy rainy',
     partly_rainy = 'partly rainy',
     mostly_rainy = 'mostly rainy',
-    default = 'default',
+    unknown = 'unknown',
 }
+
+//--------------------------------------------------------------------------------------------------

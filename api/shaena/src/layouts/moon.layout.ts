@@ -1,7 +1,7 @@
-import { SpriteLayoutOptions } from '../../../../core/typings/domain-types'
+import { SpriteTemplate } from '../../../../core/typings/domain-types'
 import { SpritePattern } from '../../../../core/typings/enum-types'
 
-const moonLayout: Record<SpritePattern.moon, SpriteLayoutOptions> = {
+const moonLayout: Record<SpritePattern.moon, SpriteTemplate> = {
     [SpritePattern.moon]: {
         style: () => {
             return `

@@ -1,7 +1,7 @@
-import { SpriteLayoutOptions } from '../../../../core/typings/domain-types'
+import { SpriteTemplate } from '../../../../core/typings/domain-types'
 import { SpritePattern } from '../../../../core/typings/enum-types'
 
-const partlySnowyLayout: Record<SpritePattern.partly_snowy, SpriteLayoutOptions> = {
+const partlySnowyLayout: Record<SpritePattern.partly_snowy, SpriteTemplate> = {
     [SpritePattern.partly_snowy]: {
         style: () => {
             return `
