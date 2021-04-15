@@ -34,6 +34,7 @@
         "yarn:import": "del-cli --dot=true ./yarn.lock && yarn import",
         "prepublishOnly": "npm run check:all && npm run build",
         "preinstall": "npm run clean",
+        "clean": "del-cli --dot=true \"./dist/**/*\"",
         "prebuild": "del-cli dist coverage .cache",
         "semantic-release": "semantic-release",
         "test": "env-cmd --silent -e test jest",
