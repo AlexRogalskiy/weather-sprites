@@ -1,12 +1,8 @@
 {
-    "name": "Weather Sprites TypeDoc",
+    "name": "Styled Weather Sprites TypeDoc",
     "entryPoints": [
         "./api",
-        "./src",
-        "./typings"
-    ],
-    "externalPattern": [
-        "./data"
+        "./core"
     ],
     "exclude": [
         "**/__tests__/**/*",

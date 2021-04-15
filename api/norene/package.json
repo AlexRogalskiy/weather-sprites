@@ -1,15 +1,13 @@
 {
     "name": "@styled-weather-sprites/norene",
     "version": "0.0.0-dev",
-    "description": "Styled weather sprites (norene design)",
+    "description": "Styled weather sprites (Norene design)",
     "license": "GPL-3.0",
     "main": "dist/index.js",
     "scripts": {
         "format": "prettier --single-quote --write **/*.ts",
         "format:md": "remark-preset-davidtheclark --format",
         "format:check": "prettier --check **/*.ts",
-        "build:dev": "env-cmd --silent -e dev npm run build",
-        "build:prod": "env-cmd --silent -e prod npm run build",
         "lint": "eslint --cache --fix --quiet --cache-location .cache/ --format codeframe --ext js,ts .",
         "lint:md": "remark-preset-davidtheclark",
         "lint:clean": "del-cli .eslintcache",
@@ -26,14 +24,10 @@
         "bump:patch": "npm version patch --no-git-tag-version",
         "bump:minor": "npm version minor --no-git-tag-version",
         "bump:major": "npm version major --no-git-tag-version",
-        "publish:latest": "lerna publish --exact && yarn publish:check",
         "postinstall": "husky install",
         "build": "ncc build src/index.ts -m -o dist",
         "package": "ncc build src/index.ts --source-map --license licenses.txt",
-        "reinstall": "del-cli --dot=true ./node_modules ./package-lock.json ./yarn.lock",
-        "yarn:import": "del-cli --dot=true ./yarn.lock && yarn import",
         "prepublishOnly": "npm run check:all && npm run build",
-        "preinstall": "npm run clean",
         "prebuild": "del-cli dist coverage .cache",
         "semantic-release": "semantic-release",
         "test": "env-cmd --silent -e test jest",
@@ -81,7 +75,6 @@
         "jest": "^26.6.3",
         "jest-circus": "^26.6.3",
         "jsonlint": "^1.6.3",
-        "lerna": "^2.2.0",
         "license-checker": "^25.0.1",
         "markdown-link-check": "^3.8.6",
         "opener": "^1.5.1",
@@ -110,7 +103,7 @@
         "node": ">= 12.x"
     },
     "keywords": [
-        "zylla weather sprites",
+        "norene weather sprites",
         "typescript"
     ],
     "maintainers": [
@@ -144,12 +137,6 @@
                 }
             ]
         ]
-    },
-    "husky": {
-        "hooks": {
-            "pre-commit": "npm run test:all",
-            "pre-push": "npm run check:all"
-        }
     },
     "bugs": {
         "url": "https://github.com/AlexRogalskiy/weather-sprites/issues"
