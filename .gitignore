@@ -51,7 +51,7 @@ pids
 bin/
 tmp/
 build/*
-packages/
+api/
 coverage/
 target/
 log/
