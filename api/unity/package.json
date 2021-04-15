@@ -1,8 +1,9 @@
 {
-    "name": "styled-weather-sprites",
+    "name": "@styled-weather-sprites/unity",
     "version": "0.0.0-dev",
-    "description": "Styled weather sprites monorepo",
+    "description": "Styled weather sprites (unity design)",
     "license": "GPL-3.0",
+    "main": "dist/index.js",
     "scripts": {
         "format": "prettier --single-quote --write **/*.ts",
         "format:md": "remark-preset-davidtheclark --format",
@@ -26,10 +27,9 @@
         "bump:minor": "npm version minor --no-git-tag-version",
         "bump:major": "npm version major --no-git-tag-version",
         "publish:latest": "lerna publish --exact && yarn publish:check",
-        "next:publish": "lerna publish --exact --canary=next --npm-tag=next --yes",
         "postinstall": "husky install",
-        "build": "ncc build core/src/index.ts -m -o dist",
-        "package": "ncc build core/src/index.ts --source-map --license licenses.txt",
+        "build": "ncc build src/index.ts -m -o dist",
+        "package": "ncc build src/index.ts --source-map --license licenses.txt",
         "reinstall": "del-cli --dot=true ./node_modules ./package-lock.json ./yarn.lock",
         "yarn:import": "del-cli --dot=true ./yarn.lock && yarn import",
         "prepublishOnly": "npm run check:all && npm run build",
@@ -110,7 +110,7 @@
         "node": ">= 12.x"
     },
     "keywords": [
-        "weather sprites",
+        "unity weather sprites",
         "typescript"
     ],
     "maintainers": [
@@ -161,7 +161,6 @@
     },
     "funding": "https://github.com/sponsors/AlexRogalskiy",
     "files": [
-        "api/**",
-        "core/**"
+        "src/**"
     ]
 }
