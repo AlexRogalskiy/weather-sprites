@@ -1,5 +1,7 @@
 {
     "lerna": "2.2.0",
+    "tagVersionPrefix": "lib@",
+    "includeMergedTags": true,
     "npmClient": "yarn",
     "useWorkspaces": true,
     "version": "1.11.0",
