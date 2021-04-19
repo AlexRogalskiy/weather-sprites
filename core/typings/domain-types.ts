@@ -81,7 +81,10 @@ export type StyleOptions = {
  * @desc Type representing layout options
  */
 export type LayoutOptions = {
-    // empty
+    /**
+     * Class type
+     */
+    readonly classType: string
 }
 
 //--------------------------------------------------------------------------------------------------

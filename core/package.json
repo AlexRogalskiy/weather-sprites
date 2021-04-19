@@ -11,7 +11,7 @@
         "lint": "eslint --cache --fix --quiet --cache-location .cache/ --format codeframe --ext js,ts .",
         "lint:md": "remark-preset-davidtheclark",
         "lint:clean": "del-cli .eslintcache",
-        "lint:json": "node_modules/.bin/jsonlint ./package.json --quiet",
+        "lint:json": "jsonlint ./package.json --quiet",
         "pretty": "pretty-quick --staged --pattern '!test/tests/lint/**'",
         "license": "license-checker --json > licenses.json",
         "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s -r 0",
@@ -24,10 +24,10 @@
         "bump:patch": "npm version patch --no-git-tag-version",
         "bump:minor": "npm version minor --no-git-tag-version",
         "bump:major": "npm version major --no-git-tag-version",
-        "postinstall": "husky install",
+        "bootstrap": "npm run build",
         "build": "ncc build src/index.ts -m -o dist",
         "package": "ncc build src/index.ts --source-map --license licenses.txt",
-        "prepublishOnly": "npm run check:all && npm run build",
+        "prepublishOnly": "npm run check:all && npm run bootstrap",
         "prebuild": "del-cli dist coverage .cache",
         "semantic-release": "semantic-release",
         "test": "env-cmd --silent -e test jest",
@@ -38,7 +38,7 @@
         "format:all": "npm run format && npm run format:md",
         "check:all": "npm run format:check",
         "test:all": "npm run test && npm run test:license",
-        "all": "npm run format:all && npm run lint:all && npm run pretty && npm run build"
+        "all": "npm run format:all && npm run lint:all && npm run pretty && npm run bootstrap"
     },
     "dependencies": {
         "env-cmd": "^10.1.0",
@@ -71,7 +71,6 @@
         "eslint-plugin-spellcheck": "0.0.17",
         "eslint-plugin-unicorn": "^17.2.0",
         "gradient-string": "^1.2.0",
-        "husky": "^5.0.8",
         "jest": "^26.6.3",
         "jest-circus": "^26.6.3",
         "jsonlint": "^1.6.3",

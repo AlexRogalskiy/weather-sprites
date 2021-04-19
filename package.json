@@ -25,7 +25,6 @@
         "bump:patch": "npm version patch --no-git-tag-version",
         "bump:minor": "npm version minor --no-git-tag-version",
         "bump:major": "npm version major --no-git-tag-version",
-        "typecheck": "lerna run --parallel --stream typecheck",
         "publish:latest": "lerna publish --exact && yarn publish:check",
         "next:publish": "lerna publish --exact --canary=next --npm-tag=next --yes",
         "postinstall": "husky install",
@@ -152,6 +151,10 @@
         "url": "https://github.com/AlexRogalskiy"
     },
     "funding": "https://github.com/sponsors/AlexRogalskiy",
+    "workspaces": [
+        "api/*",
+        "core/*"
+    ],
     "files": [
         "api/**",
         "core/**"
