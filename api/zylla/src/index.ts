@@ -16,23 +16,23 @@ import hail from '../images/hail.svg'
 // @ts-ignore
 import haze from '../images/haze.svg'
 // @ts-ignore
-import lightRain from '../images/light_rain.svg'
+import lightRain from '../images/light-rain.svg'
 // @ts-ignore
 import cloud from '../images/cloud.svg'
 // @ts-ignore
-import cloudSun from '../images/cloud_sun.svg'
+import cloudSun from '../images/cloud-sun.svg'
 // @ts-ignore
-import cloudMoon from '../images/cloud_moon.svg'
+import cloudMoon from '../images/cloud-moon.svg'
 // @ts-ignore
 import rain from '../images/rain.svg'
 // @ts-ignore
-import stormSun from '../images/storm_sun.svg'
+import stormSun from '../images/storm-sun.svg'
 // @ts-ignore
-import stormMoon from '../images/storm_moon.svg'
+import stormMoon from '../images/storm-moon.svg'
 // @ts-ignore
-import rainSun from '../images/rain_sun.svg'
+import rainSun from '../images/rain-sun.svg'
 // @ts-ignore
-import rainMoon from '../images/rain_moon.svg'
+import rainMoon from '../images/rain-moon.svg'
 // @ts-ignore
 import sleet from '../images/sleet.svg'
 // @ts-ignore

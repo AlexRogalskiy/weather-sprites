@@ -1,8 +1,8 @@
 import { SpriteTemplate } from '@weather-time/core/typings/domain-types'
 import { SpritePattern } from '@weather-time/core/typings/enum-types'
 
-const cloudMoonTemplate: Record<SpritePattern.cloud_moon, SpriteTemplate> = {
-    [SpritePattern.cloud_moon]: {
+const snowSunTemplate: Record<SpritePattern.snow_sun, SpriteTemplate> = {
+    [SpritePattern.snow_sun]: {
         style: () => {
             return `
                 `
@@ -14,4 +14,4 @@ const cloudMoonTemplate: Record<SpritePattern.cloud_moon, SpriteTemplate> = {
     },
 }
 
-export default cloudMoonTemplate
+export default snowSunTemplate

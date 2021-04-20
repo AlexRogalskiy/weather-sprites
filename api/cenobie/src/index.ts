@@ -32,9 +32,9 @@ import snowMoon from '../images/snow-moon.svg'
 // @ts-ignore
 import snowSun from '../images/snow-sun.svg'
 // @ts-ignore
-import showerSun from '../images/rain-sun.svg'
+import rainSun from '../images/rain-sun.svg'
 // @ts-ignore
-import showerMoon from '../images/rain-moon.svg'
+import rainMoon from '../images/rain-moon.svg'
 // @ts-ignore
 import sleet from '../images/sleet.svg'
 // @ts-ignore
@@ -52,8 +52,8 @@ const templates: Readonly<SpriteTemplateRecord> = {
     [SpritePattern.cloud_moon]: cloudMoon,
     [SpritePattern.cloud_sun]: cloudSun,
     [SpritePattern.moon]: moon,
-    [SpritePattern.rain_moon]: showerMoon,
-    [SpritePattern.rain_sun]: showerSun,
+    [SpritePattern.rain_moon]: rainMoon,
+    [SpritePattern.rain_sun]: rainSun,
     [SpritePattern.snowflake]: snowflake,
     [SpritePattern.storm_moon]: stormMoon,
     [SpritePattern.storm_sun]: stormSun,
