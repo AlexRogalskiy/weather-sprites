@@ -11,6 +11,8 @@ export enum SpritePattern {
     snowflake = 'snowflake',
     storm_moon = 'storm moon',
     storm_sun = 'storm sun',
+    snow_moon = 'snow moon',
+    snow_sun = 'snow sun',
     hail = 'hail',
     haze = 'haze',
     misty = 'misty',

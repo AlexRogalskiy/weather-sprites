@@ -1,46 +1,48 @@
-import { SpritePattern } from '../../../core/typings/enum-types'
-import { SpriteTemplateRecord } from '../../../core/typings/domain-types'
+import { SpriteTemplateRecord } from '@weather-time/core/typings/domain-types'
+import { SpritePattern } from '@weather-time/core/typings/enum-types'
 
 // @ts-ignore
-import sun from '../../images/maaza/sun.svg'
+import sun from '../images/sun.svg'
 // @ts-ignore
-import moon from '../../images/maaza/moon.svg'
+import moon from '../images/moon.svg'
 // @ts-ignore
-import snowflake from '../../images/maaza/snowflake.svg'
+import snowflake from '../images/snowflake.svg'
 // @ts-ignore
-import cloudy from '../../images/maaza/cloudy.svg'
+import fog from '../images/fog.svg'
 // @ts-ignore
-import fog from '../../images/maaza/fog.svg'
+import hail from '../images/hail.svg'
 // @ts-ignore
-import hail from '../../images/maaza/hail.svg'
+import haze from '../images/haze.svg'
 // @ts-ignore
-import haze from '../../images/maaza/haze.svg'
+import lightRain from '../images/light-rain.svg'
 // @ts-ignore
-import lightRain from '../../images/maaza/light_rain.svg'
+import cloud from '../images/cloud.svg'
 // @ts-ignore
-import cloud from '../../images/maaza/cloud.svg'
+import cloudSun from '../images/cloud-sun.svg'
 // @ts-ignore
-import cloudSun from '../../images/maaza/cloud_sun.svg'
+import cloudMoon from '../images/cloud-moon.svg'
 // @ts-ignore
-import cloudMoon from '../../images/maaza/cloud_moon.svg'
+import rain from '../images/rain.svg'
 // @ts-ignore
-import rain from '../../images/maaza/rain.svg'
+import stormSun from '../images/storm-sun.svg'
 // @ts-ignore
-import stormSun from '../../images/maaza/storm_sun.svg'
+import stormMoon from '../images/storm-moon.svg'
 // @ts-ignore
-import stormMoon from '../../images/maaza/storm_moon.svg'
+import snowSun from '../images/snow-sun.svg'
 // @ts-ignore
-import showerSun from '../../images/maaza/shower_sun.svg'
+import snowMoon from '../images/snow-moon.svg'
 // @ts-ignore
-import showerMoon from '../../images/maaza/shower_moon.svg'
+import rainSun from '../images/rain-sun.svg'
 // @ts-ignore
-import sleet from '../../images/maaza/sleet.svg'
+import rainMoon from '../images/rain-moon.svg'
 // @ts-ignore
-import snow from '../../images/maaza/snow.svg'
+import sleet from '../images/sleet.svg'
 // @ts-ignore
-import thunderstorm from '../../images/maaza/thunderstorm.svg'
+import snow from '../images/snow.svg'
 // @ts-ignore
-import unknown from '../../images/maaza/unknown.svg'
+import thunderstorm from '../images/thunderstorm.svg'
+// @ts-ignore
+import unknown from '../images/unknown.svg'
 
 /**
  * Sprite templates
@@ -50,11 +52,13 @@ const templates: Readonly<SpriteTemplateRecord> = {
     [SpritePattern.cloud_moon]: cloudMoon,
     [SpritePattern.cloud_sun]: cloudSun,
     [SpritePattern.moon]: moon,
-    [SpritePattern.rain_moon]: showerMoon,
-    [SpritePattern.rain_sun]: showerSun,
+    [SpritePattern.rain_moon]: rainMoon,
+    [SpritePattern.rain_sun]: rainSun,
     [SpritePattern.snowflake]: snowflake,
     [SpritePattern.storm_moon]: stormMoon,
     [SpritePattern.storm_sun]: stormSun,
+    [SpritePattern.snow_moon]: snowMoon,
+    [SpritePattern.snow_sun]: snowSun,
     [SpritePattern.hail]: hail,
     [SpritePattern.haze]: haze,
     [SpritePattern.misty]: fog,
@@ -64,8 +68,8 @@ const templates: Readonly<SpriteTemplateRecord> = {
     [SpritePattern.windy]: thunderstorm,
     [SpritePattern.thunderstorm]: thunderstorm,
     [SpritePattern.cloudy]: cloud,
-    [SpritePattern.partly_cloudy]: cloudy,
-    [SpritePattern.mostly_cloudy]: cloudy,
+    [SpritePattern.partly_cloudy]: cloud,
+    [SpritePattern.mostly_cloudy]: cloud,
     [SpritePattern.snowy]: snow,
     [SpritePattern.partly_snowy]: snow,
     [SpritePattern.light_snowy]: snow,

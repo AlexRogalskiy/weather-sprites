@@ -40,7 +40,6 @@
 [![codecov](https://codecov.io/gh/AlexRogalskiy/weather-sprites/branch/master/graph/badge.svg?token=F69zGy8tiW)](https://codecov.io/gh/AlexRogalskiy/weather-sprites)
 [![CI](https://github.com/AlexRogalskiy/weather-sprites/workflows/CI/badge.svg)](https://github.com/AlexRogalskiy/weather-sprites/actions/workflows/build.yml)
 [![GitHub Super-Linter](https://github.com/AlexRogalskiy/weather-sprites/workflows/Lint%20Code%20Base/badge.svg)](https://github.com/marketplace/actions/super-linter)
-[![GitHub JSON-Validator](https://github.com/AlexRogalskiy/weather-sprites/workflows/Validate%20JSONs/badge.svg)](https://github.com/OrRosenblatt/validate-json-action)
 [![BCH compliance](https://bettercodehub.com/edge/badge/AlexRogalskiy/weather-sprites?branch=master)](https://bettercodehub.com/)
 
 [![Gitpod Ready-to-Code](https://img.shields.io/badge/Gitpod-Ready--to--Code-blue?logo=gitpod)](https://gitpod.io/#https://github.com/AlexRogalskiy/weather-sprites)

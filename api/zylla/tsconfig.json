@@ -11,11 +11,11 @@
         "outDir": "./dist"
     },
     "include": [
-        "src/**/*",
-        "typings/**/*"
+        "."
     ],
     "exclude": [
         "node_modules",
+        "docs",
         "**/*.spec.ts"
     ]
 }

@@ -1,4 +1,4 @@
-import { SpriteTemplateRecord } from '../../../core/typings/domain-types'
+import { SpriteTemplateRecord } from '@weather-time/core/typings/domain-types'
 
 import cloudMoonTemplate from './templates/cloud-moon.template'
 import cloudSunTemplate from './templates/cloud-sun.template'
@@ -15,6 +15,8 @@ import rainMoonTemplate from './templates/rain-moon.template'
 import rainSunTemplate from './templates/rain-sun.template'
 import stormMoonTemplate from './templates/storm-moon.template'
 import stormSunTemplate from './templates/storm-sun.template'
+import snowMoonTemplate from './templates/snow-moon.template'
+import snowSunTemplate from './templates/snow-sun.template'
 import cloudyTemplate from './templates/cloudy.template'
 import hailTemplate from './templates/hail.template'
 import hazeTemplate from './templates/haze.template'
@@ -52,6 +54,8 @@ const templates: Readonly<SpriteTemplateRecord> = {
     ...rainSunTemplate,
     ...stormMoonTemplate,
     ...stormSunTemplate,
+    ...snowMoonTemplate,
+    ...snowSunTemplate,
     ...cloudyTemplate,
     ...hailTemplate,
     ...hazeTemplate,

@@ -1,5 +1,5 @@
-import { SpriteTemplate } from '../../../../core/typings/domain-types'
-import { SpritePattern } from '../../../../core/typings/enum-types'
+import { SpriteTemplate } from '@weather-time/core/typings/domain-types'
+import { SpritePattern } from '@weather-time/core/typings/enum-types'
 
 const sunnyTemplate: Record<SpritePattern.sunny, SpriteTemplate> = {
     [SpritePattern.sunny]: {

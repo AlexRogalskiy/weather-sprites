@@ -1,5 +1,5 @@
-import { SpritePattern } from '../../../core/typings/enum-types'
-import { SpriteTemplateRecord } from '../../../core/typings/domain-types'
+import { SpritePattern } from '@weather-time/core/typings/enum-types'
+import { SpriteTemplateRecord } from '@weather-time/core/typings/domain-types'
 
 // @ts-ignore
 import sun from '../images/sun.svg'
@@ -30,9 +30,9 @@ import stormSun from '../images/storm_sun.svg'
 // @ts-ignore
 import stormMoon from '../images/storm_moon.svg'
 // @ts-ignore
-import showerSun from '../images/shower_sun.svg'
+import rainSun from '../images/rain_sun.svg'
 // @ts-ignore
-import showerMoon from '../images/shower_moon.svg'
+import rainMoon from '../images/rain_moon.svg'
 // @ts-ignore
 import sleet from '../images/sleet.svg'
 // @ts-ignore
@@ -50,11 +50,13 @@ const templates: Readonly<SpriteTemplateRecord> = {
     [SpritePattern.cloud_moon]: cloudMoon,
     [SpritePattern.cloud_sun]: cloudSun,
     [SpritePattern.moon]: moon,
-    [SpritePattern.rain_moon]: showerMoon,
-    [SpritePattern.rain_sun]: showerSun,
+    [SpritePattern.rain_moon]: rainMoon,
+    [SpritePattern.rain_sun]: rainSun,
     [SpritePattern.snowflake]: snowflake,
     [SpritePattern.storm_moon]: stormMoon,
     [SpritePattern.storm_sun]: stormSun,
+    [SpritePattern.snow_moon]: snow,
+    [SpritePattern.snow_sun]: snow,
     [SpritePattern.hail]: hail,
     [SpritePattern.haze]: haze,
     [SpritePattern.misty]: fog,

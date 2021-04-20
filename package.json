@@ -1,6 +1,6 @@
 {
-    "name": "styled-weather-sprites",
-    "version": "0.0.0-dev",
+    "name": "weather-time",
+    "version": "0.0.0",
     "description": "Styled weather sprites",
     "license": "GPL-3.0",
     "scripts": {
@@ -25,7 +25,6 @@
         "bump:patch": "npm version patch --no-git-tag-version",
         "bump:minor": "npm version minor --no-git-tag-version",
         "bump:major": "npm version major --no-git-tag-version",
-        "publish:latest": "lerna publish --exact && yarn publish:check",
         "next:publish": "lerna publish --exact --canary=next --npm-tag=next --yes",
         "postinstall": "husky install",
         "build": "ncc build core/src/index.ts -m -o dist",

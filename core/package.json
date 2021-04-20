@@ -1,6 +1,6 @@
 {
-    "name": "@styled-weather-sprites/core",
-    "version": "0.0.0-dev",
+    "name": "@weather-time/core",
+    "version": "0.0.2",
     "description": "Styled weather sprites (core)",
     "license": "GPL-3.0",
     "main": "dist/index.js",

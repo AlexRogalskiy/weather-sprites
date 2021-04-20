@@ -12,10 +12,15 @@
     },
     "include": [
         "src/**/*",
-        "typings/**/*"
+        "typings/**/*",
+        "**/*.config.js"
     ],
     "exclude": [
+        "**/*.test.ts",
+        "**/*.test.js",
         "node_modules",
-        "**/*.spec.ts"
+        "tmp",
+        "dist",
+        "docs"
     ]
 }
