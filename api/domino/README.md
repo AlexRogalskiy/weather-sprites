@@ -1,4 +1,4 @@
-# *Weather Sprites (Pase Design Style)*
+# *Weather Sprites (Domino Design Style)*
 
 ## *Table of contents*
 

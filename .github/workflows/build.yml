@@ -51,11 +51,11 @@ jobs:
       - name: Test
         run: yarn lerna:check
 
-#      - name: coverage
-#        uses: codecov/codecov-action@v1
-#        with:
-#          token: ${{ secrets.CODECOV_TOKEN }}
-#          name: actions ${{ matrix.node }}
-#          file: ./coverage/coverage-final.json
-#          fail_ci_if_error: true
-#          verbose: true
+      - name: coverage
+        uses: codecov/codecov-action@v1
+        with:
+          token: ${{ secrets.CODECOV_TOKEN }}
+          name: actions ${{ matrix.node }}
+          files: ./core/coverage/coverage-final.json,./api/alieza/coverage/coverage-final.json,./api/caillen/coverage/coverage-final.json,./api/cenobie/coverage/coverage-final.json,./api/domino/coverage/coverage-final.json,./api/jaydin/coverage/coverage-final.json,./api/kilan/coverage/coverage-final.json,./api/norene/coverage/coverage-final.json,./api/ocie/coverage/coverage-final.json,./api/shaena/coverage/coverage-final.json,./api/unity/coverage/coverage-final.json,./api/zylla/coverage/coverage-final.json
+          fail_ci_if_error: true
+          verbose: true

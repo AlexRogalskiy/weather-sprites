@@ -10,4 +10,3 @@ git add core/
 
 git add **/README.md
 git add CHANGELOG.md
-git add **/package-lock.json

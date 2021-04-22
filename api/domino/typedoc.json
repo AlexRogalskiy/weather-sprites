@@ -1,5 +1,5 @@
 {
-    "name": "Styled Weather Sprites TypeDoc (Pase Design Style)",
+    "name": "Styled Weather Sprites TypeDoc (Domino Design Style)",
     "entryPoints": ["./src"],
     "externalPattern": ["./images"],
     "exclude": [

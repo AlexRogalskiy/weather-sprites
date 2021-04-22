@@ -5,7 +5,7 @@ task:
   use_compute_credits: $CIRRUS_BRANCH == 'master'
   node_modules_cache:
     folder: node_modules
-    fingerprint_script: cat package-lock.json
+    fingerprint_script: cat package.json
     populate_script: npm
   bootstrap_script: npm install
   matrix:
