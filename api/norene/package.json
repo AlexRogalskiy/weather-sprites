@@ -30,7 +30,7 @@
         "prepublishOnly": "npm run check:all && npm run bootstrap",
         "prebuild": "del-cli dist coverage .cache",
         "postbuild": "npm run copy-files",
-        "copy-files": "cpy **/* ../dist/lib/images --cwd=images --no-overwrite --parents",
+        "copy-files": "cpy **/*.svg ../dist/lib/images --cwd=images --no-overwrite --parents",
         "semantic-release": "semantic-release",
         "test": "env-cmd --silent -e test jest",
         "test:coverage": "env-cmd --silent -e test jest --collectCoverage --detectOpenHandles",
