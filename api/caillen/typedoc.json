@@ -1,11 +1,7 @@
 {
-    "name": "Styled Weather Sprites TypeDoc (Caillen design)",
-    "entryPoints": [
-        "./src"
-    ],
-    "externalPattern": [
-        "./images"
-    ],
+    "name": "Styled Weather Sprites TypeDoc (Caillen Design Style)",
+    "entryPoints": ["./src"],
+    "externalPattern": ["./images"],
     "exclude": [
         "**/__tests__/**/*",
         "**/__test_utils__/**/*",

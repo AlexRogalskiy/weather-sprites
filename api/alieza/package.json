@@ -1,7 +1,7 @@
 {
     "name": "@weather-time/alieza",
     "version": "0.0.0",
-    "description": "Styled weather sprites (Alieza design)",
+    "description": "Styled Weather sprites (Alieza design)",
     "license": "GPL-3.0",
     "main": "dist/index.js",
     "scripts": {

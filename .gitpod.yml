@@ -19,7 +19,7 @@ github:
 
 tasks:
   - before: yarn --version
-    command: yarn install && yarn run all && yarn run test:all
+    command: yarn install && yarn run lerna:build && yarn run lerna:test
 
 image:
   file: .gitpod.Dockerfile

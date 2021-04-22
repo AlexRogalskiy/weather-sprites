@@ -1,7 +1,7 @@
 {
     "name": "@weather-time/cenobie",
     "version": "0.0.0",
-    "description": "Styled weather sprites (Cenobie design)",
+    "description": "Styled Weather sprites (Cenobie design)",
     "license": "GPL-3.0",
     "main": "dist/index.js",
     "scripts": {

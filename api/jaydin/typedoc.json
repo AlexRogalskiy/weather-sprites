@@ -1,11 +1,7 @@
 {
-    "name": "Styled Weather Sprites TypeDoc (Jaydin design)",
-    "entryPoints": [
-        "./src"
-    ],
-    "externalPattern": [
-        "./images"
-    ],
+    "name": "Styled Weather Sprites TypeDoc (Jaydin Design Style)",
+    "entryPoints": ["./src"],
+    "externalPattern": ["./images"],
     "exclude": [
         "**/__tests__/**/*",
         "**/__test_utils__/**/*",

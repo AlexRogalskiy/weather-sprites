@@ -42,17 +42,17 @@ jobs:
       - name: Install
         run: yarn install
 
-      - name: Jest
-        run: yarn test:all
+      - name: Build
+        run: yarn lerna:build
 
-      - name: Check
-        run: yarn check:all
+      - name: Test
+        run: yarn lerna:test
 
-      - name: coverage
-        uses: codecov/codecov-action@v1
-        with:
-          token: ${{ secrets.CODECOV_TOKEN }}
-          name: actions ${{ matrix.node }}
-          file: ./coverage/coverage-final.json
-          fail_ci_if_error: true
-          verbose: true
+#      - name: coverage
+#        uses: codecov/codecov-action@v1
+#        with:
+#          token: ${{ secrets.CODECOV_TOKEN }}
+#          name: actions ${{ matrix.node }}
+#          file: ./coverage/coverage-final.json
+#          fail_ci_if_error: true
+#          verbose: true

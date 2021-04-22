@@ -1,9 +1,6 @@
 {
     "name": "Styled Weather Sprites TypeDoc (Core)",
-    "entryPoints": [
-        "./src",
-        "./typings"
-    ],
+    "entryPoints": ["./src", "./typings"],
     "exclude": [
         "**/__tests__/**/*",
         "**/__test_utils__/**/*",

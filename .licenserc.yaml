@@ -2,7 +2,8 @@ header: # `header` section is configurations for source codes license header.
   license:
     spdx-id: GPL-3.0-or-later # the spdx id of the license, it's convenient when your license is standard SPDX license.
     copyright-owner: Apache Software Foundation # the copyright owner to replace the [owner] in the `spdx-id` template.
-    content: | # `license` will be used as the content when `fix` command needs to insert a license header.
+    content:
+      | # `license` will be used as the content when `fix` command needs to insert a license header.
       Weather Sprites
       Copyright (C) 2021 Alexander Rogalskiy
 

@@ -4,7 +4,7 @@ module.exports = {
     clearMocks: true,
     moduleFileExtensions: ['ts', 'tsx', 'js', 'jsx', 'json', 'node'],
     testEnvironment: 'node',
-    testMatch: ['**/*.test.ts', '**/__tests__/**/?(*.)+(spec|test).ts'],
+    testMatch: ['**/*.test.(ts|js)', '**/__tests__/**/?(*.)+(spec|test).(ts|js)'],
     testRunner: 'jest-circus/runner',
     testPathIgnorePatterns: ['/node_modules/', '/__fixtures__/'],
     transform: {
@@ -23,17 +23,11 @@ module.exports = {
         '!**/redirects/**',
     ],
     coverageThreshold: {
-        'global': {
+        global: {
             branches: 4,
             functions: 4,
             lines: 4,
             statements: 4,
-        },
-        './src/**/*.ts': {
-            branches: 5,
-            functions: 7,
-            lines: 7,
-            statements: 7,
         },
     },
     coverageDirectory: './coverage',

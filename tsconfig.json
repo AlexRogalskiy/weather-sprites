@@ -18,13 +18,8 @@
         "experimentalDecorators": true,
         "removeComments": false,
         "allowSyntheticDefaultImports": true,
-        "lib": [
-            "esnext",
-            "dom"
-        ],
-        "typeRoots": [
-            "node_modules/@types"
-        ],
+        "lib": ["esnext", "dom"],
+        "typeRoots": ["node_modules/@types"],
         "target": "ESNext",
         "module": "ESNext",
         "resolveJsonModule": true,
@@ -41,14 +36,6 @@
         "strictNullChecks": true,
         "strictFunctionTypes": false
     },
-    "include": [
-        "."
-    ],
-    "exclude": [
-        "tmp",
-        "data",
-        "docs",
-        "node_modules",
-        "**/*.test.ts"
-    ]
+    "include": ["."],
+    "exclude": ["tmp", "data", "docs", "dist", "coverage", "node_modules", "tests"]
 }

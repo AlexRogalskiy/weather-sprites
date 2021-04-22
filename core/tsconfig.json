@@ -10,17 +10,5 @@
         "moduleResolution": "Node",
         "outDir": "./dist"
     },
-    "include": [
-        "src/**/*",
-        "typings/**/*",
-        "**/*.config.js"
-    ],
-    "exclude": [
-        "**/*.test.ts",
-        "**/*.test.js",
-        "node_modules",
-        "tmp",
-        "dist",
-        "docs"
-    ]
+    "include": ["."]
 }

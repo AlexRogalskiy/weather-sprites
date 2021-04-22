@@ -6,4 +6,4 @@ extraction:
         - docs
         - data
       filters:
-        - exclude: "**/*.bundle.js"
+        - exclude: '**/*.bundle.js'

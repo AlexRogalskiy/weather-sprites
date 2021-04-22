@@ -1,7 +1,7 @@
 {
     "name": "@weather-time/ocie",
     "version": "0.0.0",
-    "description": "Styled weather sprites (Ocie design)",
+    "description": "Styled Weather sprites (Ocie design)",
     "license": "GPL-3.0",
     "main": "dist/index.js",
     "scripts": {

@@ -10,12 +10,5 @@
         "moduleResolution": "Node",
         "outDir": "./dist"
     },
-    "include": [
-        "."
-    ],
-    "exclude": [
-        "node_modules",
-        "docs",
-        "**/*.spec.ts"
-    ]
+    "include": ["."]
 }

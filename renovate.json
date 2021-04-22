@@ -17,11 +17,7 @@
         "enabled": true
     },
     "ignoreUnstable": false,
-    "schedule": [
-        "after 10pm every weekday",
-        "before 5am every weekday",
-        "every weekend"
-    ],
+    "schedule": ["after 10pm every weekday", "before 5am every weekday", "every weekend"],
     "automerge": true,
     "automergeType": "branch",
     "major": {
@@ -29,12 +25,7 @@
     },
     "packageRules": [
         {
-            "updateTypes": [
-                "minor",
-                "patch",
-                "pin",
-                "digest"
-            ],
+            "updateTypes": ["minor", "patch", "pin", "digest"],
             "automerge": true
         }
     ],
@@ -44,7 +35,5 @@
     "commitMessageAction": "Updates",
     "commitMessageTopic": "{{depName}}",
     "commitMessagePrefix": ":arrow_up:",
-    "labels": [
-        "npm dependencies"
-    ]
+    "labels": ["npm dependencies"]
 }

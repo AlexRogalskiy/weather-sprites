@@ -55,7 +55,6 @@ coverage/
 target/
 log/
 site/
-dist/
+dist/*
 .cache
 node_modules
-.vercel

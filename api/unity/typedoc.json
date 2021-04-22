@@ -1,8 +1,6 @@
 {
-    "name": "Styled Weather Sprites TypeDoc (Unity design)",
-    "entryPoints": [
-        "./src"
-    ],
+    "name": "Styled Weather Sprites TypeDoc (Unity Design Style)",
+    "entryPoints": ["./src"],
     "exclude": [
         "**/__tests__/**/*",
         "**/__test_utils__/**/*",

@@ -1,11 +1,7 @@
 {
-    "name": "Styled Weather Sprites TypeDoc (Norene design)",
-    "entryPoints": [
-        "./src"
-    ],
-    "externalPattern": [
-        "./images"
-    ],
+    "name": "Styled Weather Sprites TypeDoc (Norene Design Style)",
+    "entryPoints": ["./src"],
+    "externalPattern": ["./images"],
     "exclude": [
         "**/__tests__/**/*",
         "**/__test_utils__/**/*",

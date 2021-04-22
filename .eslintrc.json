@@ -1,17 +1,8 @@
 {
-    "plugins": [
-        "jest",
-        "@typescript-eslint",
-        "spellcheck",
-        "eslint-comments",
-        "unicorn"
-    ],
+    "plugins": ["jest", "@typescript-eslint", "spellcheck", "eslint-comments", "unicorn"],
     "settings": {
         "import/parsers": {
-            "@typescript-eslint/parser": [
-                ".ts",
-                ".js"
-            ]
+            "@typescript-eslint/parser": [".ts", ".js"]
         },
         "import/resolver": {
             "typescript": {}
@@ -33,32 +24,14 @@
         "project": "./tsconfig.json"
     },
     "rules": {
-        "indent": [
-            "error",
-            4
-        ],
-        "linebreak-style": [
-            "error",
-            "unix"
-        ],
-        "jsx-quotes": [
-            "error",
-            "prefer-double"
-        ],
-        "quotes": [
-            "error",
-            "single"
-        ],
-        "comma-dangle": [
-            "error",
-            "only-multiline"
-        ],
+        "indent": ["error", 4],
+        "linebreak-style": ["error", "unix"],
+        "jsx-quotes": ["error", "prefer-double"],
+        "quotes": ["error", "single"],
+        "comma-dangle": ["error", "only-multiline"],
         "no-case-declarations": "off",
         "eqeqeq": "warn",
-        "quote-props": [
-            "warn",
-            "consistent-as-needed"
-        ],
+        "quote-props": ["warn", "consistent-as-needed"],
         "no-console": "off",
         "no-shadow": "off",
         "no-alert": "error",
@@ -152,10 +125,7 @@
                 "checkLoops": false
             }
         ],
-        "dot-location": [
-            "error",
-            "property"
-        ],
+        "dot-location": ["error", "property"],
         "brace-style": [
             "error",
             "1tbs",
@@ -181,10 +151,7 @@
                 "allowExpressions": true
             }
         ],
-        "@typescript-eslint/func-call-spacing": [
-            "error",
-            "never"
-        ],
+        "@typescript-eslint/func-call-spacing": ["error", "never"],
         "@typescript-eslint/no-array-constructor": "error",
         "@typescript-eslint/no-empty-interface": "error",
         "@typescript-eslint/no-explicit-any": "warn",
@@ -206,10 +173,7 @@
         "@typescript-eslint/require-array-sort-compare": "error",
         "@typescript-eslint/restrict-plus-operands": "error",
         "semi": "off",
-        "@typescript-eslint/semi": [
-            "error",
-            "never"
-        ],
+        "@typescript-eslint/semi": ["error", "never"],
         "@typescript-eslint/type-annotation-spacing": "error",
         "@typescript-eslint/unbound-method": "error",
         "@typescript-eslint/member-ordering": "off",
