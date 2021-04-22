@@ -1,0 +1,19 @@
+container:
+  image: node:15
+
+task:
+  use_compute_credits: $CIRRUS_BRANCH == 'master'
+  node_modules_cache:
+    folder: node_modules
+    fingerprint_script: cat package-lock.json
+    populate_script: npm
+  bootstrap_script: npm install
+  matrix:
+    - name: Build
+      build_script: npm run lerna:build
+      container:
+        memory: 8G
+    - name: Test
+      test_script: npm run lerna:test
+    - name: Check
+      prettier_check_script: npm run lerna:check

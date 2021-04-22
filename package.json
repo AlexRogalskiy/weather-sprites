@@ -20,6 +20,7 @@
         "clean": "lerna clean --yes",
         "lerna:build": "lerna bootstrap && lerna run --parallel --stream all",
         "lerna:test": "lerna bootstrap && lerna run --parallel --stream test:all",
+        "lerna:check": "lerna bootstrap && lerna run --parallel --stream check:all",
         "lerna:docs": "lerna bootstrap && lerna run --parallel --stream docs",
         "lerna:publish": "lerna publish --exact --canary=next --npm-tag=next --yes",
         "postversion": "npm publish --access public",

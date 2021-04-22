@@ -39,9 +39,11 @@
 
 [![codecov](https://codecov.io/gh/AlexRogalskiy/weather-sprites/branch/master/graph/badge.svg?token=F69zGy8tiW)](https://codecov.io/gh/AlexRogalskiy/weather-sprites)
 [![CI](https://github.com/AlexRogalskiy/weather-sprites/workflows/CI/badge.svg)](https://github.com/AlexRogalskiy/weather-sprites/actions/workflows/build.yml)
+[![Build Status](https://api.cirrus-ci.com/github/AlexRogalskiy/weather-sprites.svg)](https://cirrus-ci.com/github/AlexRogalskiy/weather-sprites)
 [![GitHub Super-Linter](https://github.com/AlexRogalskiy/weather-sprites/workflows/Lint%20Code%20Base/badge.svg)](https://github.com/marketplace/actions/super-linter)
 [![BCH compliance](https://bettercodehub.com/edge/badge/AlexRogalskiy/weather-sprites?branch=master)](https://bettercodehub.com/)
 [![NetflixOSS Lifecycle](https://img.shields.io/osslifecycle/AlexRogalskiy/weather-sprites.svg)]()
+[![lerna](https://img.shields.io/badge/maintained%20with-lerna-cc00ff.svg)](https://lerna.js.org/)
 
 [![Gitpod Ready-to-Code](https://img.shields.io/badge/Gitpod-Ready--to--Code-blue?logo=gitpod)](https://gitpod.io/#https://github.com/AlexRogalskiy/weather-sprites)
 [![Chat](https://img.shields.io/badge/chat-discussions-success.svg)](https://github.com/AlexRogalskiy/weather-sprites/discussions)

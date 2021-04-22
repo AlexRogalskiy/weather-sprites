@@ -48,6 +48,9 @@ jobs:
       - name: Test
         run: yarn lerna:test
 
+      - name: Test
+        run: yarn lerna:check
+
 #      - name: coverage
 #        uses: codecov/codecov-action@v1
 #        with:
