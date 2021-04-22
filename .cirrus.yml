@@ -6,8 +6,7 @@ task:
   node_modules_cache:
     folder: node_modules
     fingerprint_script: cat package.json
-    populate_script: npm
-  bootstrap_script: npm install
+    populate_script: npm install
   matrix:
     - name: Build
       build_script: npm run lerna:build
