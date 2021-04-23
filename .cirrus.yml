@@ -32,7 +32,9 @@ task:
       - which node
   matrix:
     - name: Install
-      install_script: npm install
+      install_script:
+        - npm install
+        - npm install --g lerna
     - name: Build
       depends_on:
         - Install
