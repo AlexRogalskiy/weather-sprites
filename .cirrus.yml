@@ -13,8 +13,13 @@ task:
     MEMORY: 4G # 256M-24G without compute credits, 256M-90G with
   node_modules_cache:
     folder: node_modules
-    fingerprint_script: cat package.json
-    populate_script: npm install
+    reupload_on_changes: false
+    fingerprint_script:
+      - echo $CIRRUS_OS
+      - node --version
+      - cat package.json
+    populate_script:
+      - npm install
   setup_script:
     - date
     - git clean -xffd --exclude=bin/cache/
@@ -29,11 +34,31 @@ task:
     - name: Install
       install_script: npm install
     - name: Build
+      depends_on:
+        - Install
       build_script: npm run lerna:build
       container:
         CPU: 1
         memory: 8G
     - name: Test
+      depends_on:
+        - Install
+        - Build
+      container:
+        matrix:
+          - image: node:latest
+          - image: node:lts
       test_script: npm run lerna:test
     - name: Check
+      depends_on:
+        - Install
+        - Build
       check_script: npm run lerna:check
+    - name: Publish
+      depends_on:
+        - Install
+        - Build
+        - Test
+        - Check
+      only_if: $CIRRUS_BRANCH  == "release"
+      publish_script: npm run lerna:publish
