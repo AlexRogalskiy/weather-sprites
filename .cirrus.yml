@@ -3,18 +3,37 @@ container:
 
 task:
   use_compute_credits: $CIRRUS_BRANCH == 'master'
+  environment:
+    # We shrink our default resource requirement as much as possible because that way we are more
+    # likely to get scheduled. We require 4G of RAM because most of the shards (all but one as of
+    # October 2019) just get OOM-killed with less. Some shards may need more. When increasing the
+    # requirements for select shards, please leave a comment on those shards saying when you
+    # increased the requirements, what numbers you tried, and what the results were.
+    CPU: 1 # 0.1-8 without compute credits, 0.1-30 with (yes, you can go fractional)
+    MEMORY: 4G # 256M-24G without compute credits, 256M-90G with
   node_modules_cache:
     folder: node_modules
     fingerprint_script: cat package.json
     populate_script: npm install
+  setup_script:
+    - date
+    - git clean -xffd --exclude=bin/cache/
+    - git fetch origin
+    - git fetch origin master # To set FETCH_HEAD, so that "git merge-base" works.
+    - date
+  on_failure:
+    failure_script:
+      - date
+      - which node
   matrix:
     - name: Install
       install_script: npm install
     - name: Build
       build_script: npm run lerna:build
       container:
+        CPU: 1
         memory: 8G
     - name: Test
       test_script: npm run lerna:test
     - name: Check
-      prettier_check_script: npm run lerna:check
+      check_script: npm run lerna:check
