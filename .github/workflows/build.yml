@@ -51,6 +51,16 @@ jobs:
       - name: Test
         run: yarn lerna:check
 
+      - name: Coveralls
+        uses: coverallsapp/github-action@master
+        if: hashFiles('./coverage/lcov.info') != ''
+        env:
+          NODE_COVERALLS_DEBUG: 1
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          parallel: true
+          flag-name: run-${{ matrix.node }}
+
       - name: coverage
         uses: codecov/codecov-action@v1
         with:
@@ -59,3 +69,14 @@ jobs:
           files: ./core/coverage/coverage-final.json,./api/alieza/coverage/coverage-final.json,./api/caillen/coverage/coverage-final.json,./api/cenobie/coverage/coverage-final.json,./api/domino/coverage/coverage-final.json,./api/jaydin/coverage/coverage-final.json,./api/kilan/coverage/coverage-final.json,./api/norene/coverage/coverage-final.json,./api/ocie/coverage/coverage-final.json,./api/shaena/coverage/coverage-final.json,./api/unity/coverage/coverage-final.json,./api/zylla/coverage/coverage-final.json
           fail_ci_if_error: true
           verbose: true
+
+  finish:
+    needs: test
+    runs-on: ubuntu-latest
+    if: hashFiles('./coverage/lcov.info') != ''
+    steps:
+      - name: Coveralls Finished
+        uses: coverallsapp/github-action@v1.1.0
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          parallel-finished: true

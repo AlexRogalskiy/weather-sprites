@@ -38,6 +38,9 @@
 [![Hits-of-Code](https://hitsofcode.com/github/AlexRogalskiy/weather-sprites)](https://hitsofcode.com/github/AlexRogalskiy/weather-sprites/view)
 [![ComVer](https://img.shields.io/badge/ComVer-compliant-brightgreen.svg)][tags]
 
+[![Codeac](https://static.codeac.io/badges/2-354770350.svg)](https://app.codeac.io/github/AlexRogalskiy/weather-sprites)
+[![Coverage Status](https://coveralls.io/repos/github/AlexRogalskiy/weather-sprites/badge.svg?branch=master)](https://coveralls.io/github/AlexRogalskiy/weather-sprites?branch=master)
+[![codebeat badge](https://codebeat.co/badges/81e098cc-02c8-432f-a6af-3a010a71e3e5)](https://codebeat.co/projects/github-com-alexrogalskiy-weather-sprites-master)
 [![codecov](https://codecov.io/gh/AlexRogalskiy/weather-sprites/branch/master/graph/badge.svg?token=F69zGy8tiW)](https://codecov.io/gh/AlexRogalskiy/weather-sprites)
 [![CI](https://github.com/AlexRogalskiy/weather-sprites/workflows/CI/badge.svg)](https://github.com/AlexRogalskiy/weather-sprites/actions/workflows/build.yml)
 [![Build Status](https://api.cirrus-ci.com/github/AlexRogalskiy/weather-sprites.svg)](https://cirrus-ci.com/github/AlexRogalskiy/weather-sprites)
@@ -50,6 +53,8 @@
 [![Chat](https://img.shields.io/badge/chat-discussions-success.svg)](https://github.com/AlexRogalskiy/weather-sprites/discussions)
 [![Open questions](https://img.shields.io/badge/Open-questions-blue.svg?style=flat-curved)](https://github.com/AlexRogalskiy/weather-sprites/labels/question)
 [![Open bugs](https://img.shields.io/badge/Open-bugs-red.svg?style=flat-curved)](https://github.com/AlexRogalskiy/weather-sprites/labels/bug)
+
+[![run on repl.it](https://repl.it/badge/github/AlexRogalskiy/weather-sprites)](https://replit.com/@AlexRogalskiy/weather-sprites#README.md)
 
 ## *Table of contents*
 
