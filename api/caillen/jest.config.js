@@ -30,6 +30,7 @@ module.exports = {
             statements: 4,
         },
     },
+    snapshotSerializers: ['jest-emotion'],
     coverageDirectory: './coverage',
     coverageReporters: ['json', 'lcov', 'text', 'clover', 'html'],
 }
