@@ -7,6 +7,8 @@ import { ContrastScores, HslaColor, HslColor, RgbaColor, RgbColor } from 'polish
 
 import { BiProcessor, Processor } from '../typings/standard-types'
 
+export const spaces = (args: number[] = [0, 0.5, 1, 1.5, 2, 2.5, 3]): string[] => args.map(n => `${n}rem`)
+
 export const breakpoints = (args: number[] = [40, 52, 64]): string[] =>
     args.map((n: number): string => `${n}em`)
 
