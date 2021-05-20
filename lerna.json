@@ -4,15 +4,17 @@
     "includeMergedTags": true,
     "npmClient": "npm",
     "useWorkspaces": true,
-    "version": "1.11.0",
+    "version": "independent",
     "packages": ["api/*", "core/*"],
     "command": {
         "run": {
             "stream": true
         },
         "publish": {
+            "npmClient": "npm",
             "forcePublish": true,
             "skipGit": true,
+            "allowBranch": ["main", "master"],
             "registry": "https://registry.npmjs.org/"
         }
     }
