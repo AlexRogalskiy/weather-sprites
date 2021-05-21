@@ -93,6 +93,8 @@
         "url": "git+https://github.com/AlexRogalskiy/weather-sprites.git"
     },
     "publishConfig": {
+        "registry": "https://registry.npmjs.org/",
+        "tag": "latest",
         "access": "public"
     },
     "engines": {
