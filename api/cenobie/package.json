@@ -22,7 +22,7 @@
         "docs:md": "typedoc --tsconfig tsconfig.json --out docs/md/ --theme markdown --excludePrivate --mdHideSources --mdEngine github",
         "coverage": "cat ./coverage/lcov.info | coveralls",
         "coverage:open": "opener ./coverage/lcov-report/index.html",
-        "postversion": "npm publish --access public",
+        "postversion": "git push --follow-tags && npm publish --access public",
         "bump:patch": "npm version patch --no-git-tag-version",
         "bump:minor": "npm version minor --no-git-tag-version",
         "bump:major": "npm version major --no-git-tag-version",
