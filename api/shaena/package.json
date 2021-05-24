@@ -32,6 +32,7 @@
         "prepublishOnly": "npm run check:all && npm run bootstrap",
         "deps": "npm install",
         "prebuild": "del-cli dist coverage .cache",
+        "preinstall": "npx npm-force-resolutions",
         "semantic-release": "semantic-release",
         "test": "env-cmd --silent -e test jest",
         "test:coverage": "env-cmd --silent -e test jest --collectCoverage --detectOpenHandles --coverage && coveralls < ./coverage/lcov.info",

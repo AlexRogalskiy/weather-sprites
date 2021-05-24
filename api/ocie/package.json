@@ -32,6 +32,7 @@
         "prepublishOnly": "npm run check:all && npm run bootstrap",
         "deps": "npm install",
         "prebuild": "del-cli dist coverage .cache",
+        "preinstall": "npx npm-force-resolutions",
         "postbuild": "npm run copy-files",
         "copy-files": "cpy ./images/*.{svg,css} ./dist/lib/ --no-overwrite --parents",
         "semantic-release": "semantic-release",
