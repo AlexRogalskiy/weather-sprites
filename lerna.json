@@ -16,6 +16,11 @@
             "skipGit": true,
             "allowBranch": ["main", "master"],
             "registry": "https://registry.npmjs.org/"
+        },
+        "version": {
+            "allowBranch": ["master", "release/*"],
+            "conventionalCommits": true,
+            "message": "chore(release): publish"
         }
     }
 }

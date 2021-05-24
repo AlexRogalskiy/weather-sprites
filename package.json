@@ -22,6 +22,8 @@
         "clean": "lerna clean --yes",
         "semantic-release": "semantic-release",
         "gitlog": "node ./scripts/changelog.js",
+        "ls": "git ls-files",
+        "lerna:deps": "lerna bootstrap && lerna run --parallel --stream deps",
         "lerna:build": "lerna bootstrap && lerna run --parallel --stream all",
         "lerna:test": "lerna bootstrap && lerna run --parallel --stream test:all",
         "lerna:check": "lerna bootstrap && lerna run --parallel --stream check:all",
