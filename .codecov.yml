@@ -48,9 +48,54 @@ coverage:
     - 'tests'
 
 flags:
-  src:
+  core:
     paths:
-      - src
+      - core
+    carryforward: true
+  api-alieza:
+    paths:
+      - api/alieza/
+    carryforward: true
+  api-caillen:
+    paths:
+      - api/caillen/
+    carryforward: true
+  api-cenobie:
+    paths:
+      - api/cenobie/
+    carryforward: true
+  api-domino:
+    paths:
+      - api/domino/
+    carryforward: true
+  api-jaydin:
+    paths:
+      - api/jaydin/
+    carryforward: true
+  api-kilan:
+    paths:
+      - api/kilan/
+    carryforward: true
+  api-norene:
+    paths:
+      - api/norene/
+    carryforward: true
+  api-ocie:
+    paths:
+      - api/ocie/
+    carryforward: true
+  api-shaena:
+    paths:
+      - api/shaena/
+    carryforward: true
+  api-unity:
+    paths:
+      - api/unity/
+    carryforward: true
+  api-zylla:
+    paths:
+      - api/zylla/
+    carryforward: true
 
 parsers:
   gcov:

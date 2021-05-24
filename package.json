@@ -15,6 +15,7 @@
         "lint:staged": "lint-staged --no-stash --allow-empty",
         "validate:commit": "validate-commit-msg",
         "pretty": "pretty-quick --staged --pattern '!test/tests/lint/**'",
+        "license:report": "yarn licenses list > license_report.txt",
         "license": "license-checker --json > licenses.json",
         "changelog": "conventional-changelog -p angular -i CHANGELOG.md -k core -s -r 0",
         "markdown": "markdown-link-check ./README.md ./SECURITY.md",
