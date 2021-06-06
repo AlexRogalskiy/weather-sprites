@@ -93,7 +93,7 @@
         "rollup-plugin-svg": "^2.0.0",
         "rollup-plugin-typescript2": "^0.30.0",
         "semantic-release": ">=17.2.3",
-        "ts-jest": "^26.4.4",
+        "ts-jest": "27.0.3",
         "ts-node": ">=9.0.0",
         "typedoc": "^0.20.36",
         "typedoc-plugin-markdown": "^1.2.1",
