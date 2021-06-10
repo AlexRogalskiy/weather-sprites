@@ -4,12 +4,12 @@ body {
     background-color: #222;
     min-width: 500px;
     font-family: "Poppins", sans-serif;
-    color: #CCC;
+    color: #ccc;
 }
 
 body a {
     text-decoration: none;
-    color: #00A0B0;
+    color: #00a0b0;
 }
 
 .showbox {
@@ -29,7 +29,7 @@ body a {
 
 .title .heading {
     font-size: 32px;
-    margin: 0px;
+    margin: 0;
 }
 
 .credit {
@@ -57,7 +57,7 @@ body a {
 }
 
 .sunny-body path {
-    fill: #EDC951;
+    fill: #edc951;
 }
 
 .sunny-long-ray {
@@ -66,7 +66,7 @@ body a {
 }
 
 .sunny-long-ray path {
-    fill: #EDC951;
+    fill: #edc951;
 }
 
 .sunny-short-ray {
@@ -75,7 +75,7 @@ body a {
 }
 
 .sunny-short-ray path {
-    fill: #EDC951;
+    fill: #edc951;
 }
 
 .cloud-offset path {
@@ -83,21 +83,21 @@ body a {
 }
 
 .main-cloud path {
-    fill: #00A0B0;
+    fill: #00a0b0;
 }
 
 .small-cloud path {
-    fill: #00A0B0;
+    fill: #00a0b0;
     animation: flyby 6s linear infinite;
 }
 
 .rain-cloud path {
-    fill: #00A0B0;
+    fill: #00a0b0;
     animation: rain-cloud-color 6s ease infinite;
 }
 
 .rain-drops path {
-    fill: #00A0B0;
+    fill: #00a0b0;
     opacity: 0;
 }
 
@@ -114,12 +114,12 @@ body a {
 }
 
 .snow-cloud path {
-    fill: #CCC;
+    fill: #ccc;
 }
 
 .snowflakes path {
     transform-origin: 50% 50%;
-    fill: #CCC;
+    fill: #ccc;
     opacity: 0;
 }
 
@@ -136,7 +136,7 @@ body a {
 }
 
 .wind-string path {
-    stroke: #CCC;
+    stroke: #ccc;
     stroke-linecap: round;
     stroke-width: 7px;
     animation: wind-blow 3s linear infinite;
@@ -148,22 +148,22 @@ body a {
 }
 
 .rainbows path:nth-child(1) {
-    stroke: #BD1E52;
+    stroke: #bd1e52;
     stroke-width: 6px;
 }
 
 .rainbows path:nth-child(2) {
-    stroke: #E88024;
+    stroke: #e88024;
     stroke-width: 8px;
 }
 
 .rainbows path:nth-child(3) {
-    stroke: #F8CB10;
+    stroke: #f8cb10;
     stroke-width: 6px;
 }
 
 .rainbows path:nth-child(4) {
-    stroke: #899C3B;
+    stroke: #899c3b;
     stroke-width: 14px;
 }
 
