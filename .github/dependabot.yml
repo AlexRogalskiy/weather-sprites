@@ -24,6 +24,9 @@ updates:
   - package-ecosystem: "npm"
     open-pull-requests-limit: 10
     directory: "/"
+    # Increase the version requirement only when required by the new version.
+    # More info: https://help.github.com/en/github/administering-a-repository/configuration-options-for-dependency-updates#versioning-strategy
+    versioning-strategy: increase-if-necessary
     schedule:
       interval: "daily"
       time: "09:00"
