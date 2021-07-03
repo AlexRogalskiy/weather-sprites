@@ -12,9 +12,12 @@
         },
         "publish": {
             "npmClient": "npm",
+            "bump": "patch",
+            "conventionalCommits": true,
             "forcePublish": true,
             "skipGit": true,
             "allowBranch": ["main", "master"],
+            "message": "chore(release): 🤖 publish package",
             "registry": "https://registry.npmjs.org/"
         },
         "version": {
