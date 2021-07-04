@@ -14,7 +14,7 @@
         "lint:clean": "del-cli .eslintcache",
         "lint:json": "jsonlint ./package.json --quiet",
         "lint:staged": "lint-staged --no-stash --allow-empty",
-        "lint:style": "stylelint api/**/styles.css v",
+        "lint:style": "stylelint api/**/styles.css",
         "validate:commit": "validate-commit-msg",
         "pretty": "pretty-quick --staged --pattern '!test/tests/lint/**'",
         "license:report": "yarn licenses list > license_report.txt",
