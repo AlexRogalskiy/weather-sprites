@@ -1,4 +1,6 @@
 #!/bin/sh
 . "$(dirname "$0")/_/husky.sh"
 
-commitlint -E HUSKY_GIT_PARAMS
+git cz --hook --non-interactive --type=feat --subject="added new features" || true
+# npx --no-install commitlint --edit "$1"
+#commitlint -E HUSKY_GIT_PARAMS

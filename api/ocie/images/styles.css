@@ -71,11 +71,14 @@ svg {
 }
 
 /* GLOBAL */
-*, *:after, *:before {
+*,
+*:after,
+*:before {
     box-sizing: border-box;
 }
 
-html, body {
+html,
+body {
     width: 100%;
     height: 100%;
 }
@@ -100,8 +103,10 @@ svg {
     shape-rendering: geometricPrecision;
 }
 
-g, path, circle, rect {
-
+g,
+path,
+circle,
+rect {
     -webkit-transform-origin: 50% 50%;
     -moz-transform-origin: 50% 50%;
     -o-transform-origin: 50% 50%;
@@ -130,7 +135,6 @@ g, path, circle, rect {
 
 /* SUN */
 .climacon_componentWrap-sun {
-
     -webkit-animation-name: rotate;
     -moz-animation-name: rotate;
     -o-animation-name: rotate;
@@ -155,16 +159,13 @@ g, path, circle, rect {
     -moz-animation-duration: 3s;
     -o-animation-duration: 3s;
     animation-duration: 3s;
-
 }
 
 .climacon_iconWrap .climacon_component-stroke_sunSpoke:nth-child(even) {
-
     -webkit-animation-delay: 3s;
     -moz-animation-delay: 3s;
     -o-animation-delay: 3s;
     animation-delay: 3s;
-
 }
 
 /* MOON */
@@ -191,9 +192,7 @@ g, path, circle, rect {
     -moz-animation-direction: normal;
     -o-animation-direction: normal;
     animation-direction: normal;
-
 }
-
 
 /* WIND */
 .climacon_componentWrap-wind {
@@ -218,10 +217,8 @@ g, path, circle, rect {
     animation-timing-function: ease-in-out;
 }
 
-
 /* CLOUD SUN */
 .climacon_componentWrap-sun_cloud {
-
     -webkit-animation-name: behindCloudMove, rotate;
     -moz-animation-name: behindCloudMove, rotate;
     -o-animation-name: behindCloudMove, rotate;
@@ -246,7 +243,6 @@ g, path, circle, rect {
     -moz-animation-duration: 3s, 12s;
     -o-animation-duration: 3s, 12s;
     animation-duration: 3s, 12s;
-
 }
 
 .climacon_component-stroke_sunSpoke {
@@ -280,7 +276,6 @@ g, path, circle, rect {
     -moz-animation-fill-mode: both;
     -o-animation-fill-mode: both;
     animation-fill-mode: both;
-
 }
 
 .climacon_component-stroke_sunSpoke:nth-child(even) {
@@ -288,7 +283,6 @@ g, path, circle, rect {
     -moz-animation-delay: 3s;
     -o-animation-delay: 3s;
     animation-delay: 3s;
-
 }
 
 /* CLOUD MOON */
@@ -337,7 +331,6 @@ g, path, circle, rect {
     -moz-animation-duration: 1s;
     -o-animation-duration: 1s;
     animation-duration: 1s;
-
 }
 
 .climacon_component-stroke_drizzle:nth-child(1) {
@@ -361,7 +354,6 @@ g, path, circle, rect {
     animation-delay: 1.2s;
 }
 
-
 /* RAIN */
 .climacon_component-stroke_rain {
     fill-opacity: 0;
@@ -382,12 +374,11 @@ g, path, circle, rect {
     animation-duration: 2s;
 }
 
-.climacon_component-stroke_rain:nth-child(n+4) {
+.climacon_component-stroke_rain:nth-child(n + 4) {
     -webkit-animation-delay: 1s;
     -moz-animation-delay: 1s;
     -o-animation-delay: 1s;
     animation-delay: 1s;
-
 }
 
 .climacon_component-stroke_rain_alt:nth-child(2) {
@@ -395,13 +386,11 @@ g, path, circle, rect {
     -moz-animation-delay: 1s;
     -o-animation-delay: 1s;
     animation-delay: 1s;
-
 }
 
 /* HAIL */
 /* HAIL ALT */
 .climacon_component-stroke_hailAlt {
-
     fill-opacity: 0;
 
     -webkit-animation-timing-function: ease-in;
@@ -413,7 +402,6 @@ g, path, circle, rect {
     -moz-animation-duration: 0.66667s;
     -o-animation-duration: 0.66667s;
     animation-duration: 0.66667s;
-
 }
 
 .climacon_component-stroke_hailAlt-left {
@@ -421,7 +409,6 @@ g, path, circle, rect {
     -moz-animation-name: hailLeft, fillOpacity2;
     -o-animation-name: hailLeft, fillOpacity2;
     animation-name: hailLeft, fillOpacity2;
-
 }
 
 .climacon_component-stroke_hailAlt-middle {
@@ -429,7 +416,6 @@ g, path, circle, rect {
     -moz-animation-name: hailMiddle, fillOpacity2;
     -o-animation-name: hailMiddle, fillOpacity2;
     animation-name: hailMiddle, fillOpacity2;
-
 }
 
 .climacon_component-stroke_hailAlt-middle:nth-child(2) {
@@ -437,7 +423,6 @@ g, path, circle, rect {
     -moz-animation-name: hailMiddle2, fillOpacity2;
     -o-animation-name: hailMiddle2, fillOpacity2;
     animation-name: hailMiddle2, fillOpacity2;
-
 }
 
 .climacon_component-stroke_hailAlt-right {
@@ -445,7 +430,6 @@ g, path, circle, rect {
     -moz-animation-name: hailRight, fillOpacity2;
     -o-animation-name: hailRight, fillOpacity2;
     animation-name: hailRight, fillOpacity2;
-
 }
 
 .climacon_component-stroke_hailAlt:nth-child(1) {
@@ -453,7 +437,6 @@ g, path, circle, rect {
     -moz-animation-delay: 0s;
     -o-animation-delay: 0s;
     animation-delay: 0s;
-
 }
 
 .climacon_component-stroke_hailAlt:nth-child(2) {
@@ -461,7 +444,6 @@ g, path, circle, rect {
     -moz-animation-delay: 0.11111s;
     -o-animation-delay: 0.11111s;
     animation-delay: 0.11111s;
-
 }
 
 .climacon_component-stroke_hailAlt:nth-child(3) {
@@ -469,7 +451,6 @@ g, path, circle, rect {
     -moz-animation-delay: 0.22222s;
     -o-animation-delay: 0.22222s;
     animation-delay: 0.22222s;
-
 }
 
 .climacon_component-stroke_hailAlt:nth-child(4) {
@@ -477,7 +458,6 @@ g, path, circle, rect {
     -moz-animation-delay: 0.33333s;
     -o-animation-delay: 0.33333s;
     animation-delay: 0.33333s;
-
 }
 
 .climacon_component-stroke_hailAlt:nth-child(5) {
@@ -485,7 +465,6 @@ g, path, circle, rect {
     -moz-animation-delay: 0.44444s;
     -o-animation-delay: 0.44444s;
     animation-delay: 0.44444s;
-
 }
 
 .climacon_component-stroke_hailAlt:nth-child(6) {
@@ -493,7 +472,6 @@ g, path, circle, rect {
     -moz-animation-delay: 0.55556s;
     -o-animation-delay: 0.55556s;
     animation-delay: 0.55556s;
-
 }
 
 /* SNOW */
@@ -567,7 +545,6 @@ g, path, circle, rect {
 
 /* FOG */
 .climacon_component-stroke_fogLine {
-
     fill-opacity: 0.5;
 
     -webkit-animation-name: translateFog, fillOpacityFog;
@@ -594,7 +571,6 @@ g, path, circle, rect {
     -moz-animation-duration: 12s;
     -o-animation-duration: 12s;
     animation-duration: 12s;
-
 }
 
 .climacon_component-stroke_fogLine:nth-child(even) {
@@ -603,7 +579,6 @@ g, path, circle, rect {
     -o-animation-delay: 6s;
     animation-delay: 6s;
 }
-
 
 /* LIGHTNING */
 .climacon_component-stroke_lightning {
@@ -632,7 +607,6 @@ g, path, circle, rect {
     -moz-animation-duration: 12s;
     -o-animation-duration: 12s;
     animation-duration: 12s;
-
 }
 
 /* TORNADO */
@@ -706,7 +680,6 @@ g, path, circle, rect {
 }
 
 .climacon_component-stroke_arrow-up {
-
     fill-opacity: 0;
 
     -webkit-animation-name: fillOpacity2, translateArrowUp;
@@ -718,11 +691,9 @@ g, path, circle, rect {
     -moz-animation-duration: 3s;
     -o-animation-duration: 3s;
     animation-duration: 3s;
-
 }
 
 .climacon_component-stroke_arrow-down {
-
     fill-opacity: 0;
 
     -webkit-animation-name: fillOpacity2, translateArrowDown;
@@ -734,7 +705,6 @@ g, path, circle, rect {
     -moz-animation-duration: 3s;
     -o-animation-duration: 3s;
     animation-duration: 3s;
-
 }
 
 .climacon_componentWrap-sunriseAlt {
@@ -910,7 +880,7 @@ g, path, circle, rect {
         -webkit-transform: scale(1, 1);
     }
     100% {
-        -webkit-transform: scale(.5, .5);
+        -webkit-transform: scale(0.5, 0.5);
     }
 }
 
@@ -919,7 +889,7 @@ g, path, circle, rect {
         -moz-transform: scale(1, 1);
     }
     100% {
-        -moz-transform: scale(.5, .5);
+        -moz-transform: scale(0.5, 0.5);
     }
 }
 
@@ -928,7 +898,7 @@ g, path, circle, rect {
         -o-transform: scale(1, 1);
     }
     100% {
-        -o-transform: scale(.5, .5);
+        -o-transform: scale(0.5, 0.5);
     }
 }
 
@@ -937,7 +907,7 @@ g, path, circle, rect {
         transform: scale(1, 1);
     }
     100% {
-        transform: scale(.5, .5);
+        transform: scale(0.5, 0.5);
     }
 }
 
@@ -5119,7 +5089,7 @@ g, path, circle, rect {
     }
 
     100% {
-        -webkit-transform: translateY(17.5px) translateX(0.0px);
+        -webkit-transform: translateY(17.5px) translateX(0px);
     }
 }
 
@@ -5525,7 +5495,7 @@ g, path, circle, rect {
     }
 
     100% {
-        -moz-transform: translateY(17.5px) translateX(0.0px);
+        -moz-transform: translateY(17.5px) translateX(0px);
     }
 }
 
@@ -5931,7 +5901,7 @@ g, path, circle, rect {
     }
 
     100% {
-        -o-transform: translateY(17.5px) translateX(0.0px);
+        -o-transform: translateY(17.5px) translateX(0px);
     }
 }
 
@@ -6337,7 +6307,7 @@ g, path, circle, rect {
     }
 
     100% {
-        transform: translateY(17.5px) translateX(0.0px);
+        transform: translateY(17.5px) translateX(0px);
     }
 }
 
@@ -6743,7 +6713,7 @@ g, path, circle, rect {
     }
 
     100% {
-        -webkit-transform: translateY(17.5px) translateX(0.0px);
+        -webkit-transform: translateY(17.5px) translateX(0px);
     }
 }
 
@@ -7149,7 +7119,7 @@ g, path, circle, rect {
     }
 
     100% {
-        -moz-transform: translateY(17.5px) translateX(0.0px);
+        -moz-transform: translateY(17.5px) translateX(0px);
     }
 }
 
@@ -7555,7 +7525,7 @@ g, path, circle, rect {
     }
 
     100% {
-        -o-transform: translateY(17.5px) translateX(0.0px);
+        -o-transform: translateY(17.5px) translateX(0px);
     }
 }
 
@@ -7961,7 +7931,7 @@ g, path, circle, rect {
     }
 
     100% {
-        transform: translateY(17.5px) translateX(0.0px);
+        transform: translateY(17.5px) translateX(0px);
     }
 }
 
@@ -8537,7 +8507,6 @@ g, path, circle, rect {
         stroke-opacity: 0.5;
     }
 }
-
 
 @-webkit-keyframes translateSunrise {
     0% {

@@ -3,7 +3,7 @@
 body {
     background-color: #222;
     min-width: 500px;
-    font-family: "Poppins", sans-serif;
+    font-family: 'Poppins', sans-serif;
     color: #ccc;
 }
 
@@ -198,7 +198,8 @@ body a {
 }
 
 @keyframes rain-cloud-color {
-    100%, 0% {
+    100%,
+    0% {
         fill: #666;
     }
     20% {

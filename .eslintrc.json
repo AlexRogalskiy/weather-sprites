@@ -1,5 +1,13 @@
 {
-    "plugins": ["jest", "@typescript-eslint", "spellcheck", "eslint-comments", "unicorn"],
+    "plugins": [
+        "jest",
+        "@typescript-eslint",
+        "spellcheck",
+        "eslint-comments",
+        "unicorn",
+        "prettier",
+        "jsdoc"
+    ],
     "settings": {
         "import/parsers": {
             "@typescript-eslint/parser": [".ts", ".js"]
@@ -14,8 +22,9 @@
         "plugin:eslint-comments/recommended",
         "plugin:unicorn/recommended",
         "plugin:@typescript-eslint/recommended",
-        "prettier",
-        "prettier/@typescript-eslint"
+        "plugin:jsdoc/recommended",
+        "plugin:prettier/recommended",
+        "prettier"
     ],
     "parser": "@typescript-eslint/parser",
     "parserOptions": {
@@ -49,6 +58,7 @@
         }
     },
     "rules": {
+        "prettier/prettier": "error",
         "indent": ["error", 4],
         "linebreak-style": ["error", "unix"],
         "jsx-quotes": ["error", "prefer-double"],

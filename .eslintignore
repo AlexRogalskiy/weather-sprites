@@ -5,3 +5,7 @@ coverage/
 tests/
 scripts/
 docs/
+
+plopfile.js
+jest.config.js
+commitlint.config.js

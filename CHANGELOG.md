@@ -1,4 +1,9 @@
-## 0.0.2 (2021-05-24)
+## 0.0.2 (2021-07-05)
+
+
+### Features
+
+* 🎸 added commitlint package ([1711ddb](https://github.com/AlexRogalskiy/weather-sprites/commit/1711ddb2fdba361b532631709d2a0d376519b72a))
 
 
 
