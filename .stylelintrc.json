@@ -1,6 +1,6 @@
 {
-    "extends": ["stylelint-config-standard", "stylelint-config-prettier"],
-    "plugins": ["stylelint-order", "stylelint-scss", "stylelint-prettier"],
+    "extends": ["stylelint-config-standard", "stylelint-config-prettier", "stylelint-config-recommended"],
+    "plugins": ["stylelint-order", "stylelint-scss", "stylelint-prettier", "stylelint-selector-bem-pattern"],
     "rules": {
         "indentation": 4,
         "prettier/prettier": true,
@@ -21,6 +21,21 @@
         "max-empty-lines": null,
         "no-duplicate-selectors": null,
         "selector-pseudo-element-colon-notation": null,
+        "selector-class-pattern": null,
+        "selector-no-qualifying-type": [
+            true,
+            {
+                "ignore": ["attribute", "class"]
+            }
+        ],
+        "plugin/selector-bem-pattern": {
+            "preset": "bem",
+            "componentName": "(([a-z0-9]+(?!-$)-?)+)",
+            "componentSelectors": {
+                "initial": "\\.{componentName}(((__|--)(([a-z0-9\\[\\]'=]+(?!-$)-?)+))+)?$"
+            },
+            "ignoreSelectors": [".*\\.has-.*", ".*\\.is-.*"]
+        },
         "at-rule-no-unknown": [
             true,
             {
