@@ -23,6 +23,7 @@
         "version": {
             "allowBranch": ["master", "release/*"],
             "conventionalCommits": true,
+            "exact": true,
             "message": "chore(release): publish"
         }
     }
