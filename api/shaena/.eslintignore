@@ -5,3 +5,5 @@ coverage/
 tests/
 scripts/
 docs/
+
+jest.config.js
