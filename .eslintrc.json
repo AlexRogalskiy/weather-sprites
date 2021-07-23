@@ -1,13 +1,5 @@
 {
-    "plugins": [
-        "jest",
-        "@typescript-eslint",
-        "spellcheck",
-        "eslint-comments",
-        "unicorn",
-        "prettier",
-        "jsdoc"
-    ],
+    "plugins": ["jest", "@typescript-eslint", "spellcheck", "eslint-comments", "unicorn", "prettier"],
     "settings": {
         "import/parsers": {
             "@typescript-eslint/parser": [".ts", ".js"]
@@ -22,7 +14,6 @@
         "plugin:eslint-comments/recommended",
         "plugin:unicorn/recommended",
         "plugin:@typescript-eslint/recommended",
-        "plugin:jsdoc/recommended",
         "plugin:prettier/recommended",
         "prettier"
     ],
