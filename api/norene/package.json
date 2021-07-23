@@ -17,6 +17,8 @@
         "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s -r 0",
         "markdown": "markdown-link-check ./README.md ./SECURITY.md",
         "remark": "remark -q -f .",
+        "build:css": "node-sass --output ./images/css --source-map true ./styles/styles.scss",
+        "build:css:min": "node-sass --output-style compressed --source-map true ./styles/styles.scss > ./images/css/styles.min.css",
         "docs": "rimraf docs && npm run docs:html",
         "docs:html": "typedoc --tsconfig tsconfig.json --out docs/html/ --theme minimal --excludePrivate --plugin none",
         "docs:md": "typedoc --tsconfig tsconfig.json --out docs/md/ --theme markdown --excludePrivate --mdHideSources --mdEngine github",
@@ -43,7 +45,7 @@
         "format:all": "npm run format && npm run format:md",
         "check:all": "npm run format:check",
         "test:all": "npm run test && npm run test:license",
-        "all": "npm run format:all && npm run lint:all && npm run pretty && npm run bootstrap"
+        "all": "npm run format:all && npm run lint:all && npm run pretty && npm run bootstrap && npm run build:css"
     },
     "dependencies": {
         "@weather-time/core": "0.0.2",
@@ -81,6 +83,7 @@
         "jsonlint": "^1.6.3",
         "license-checker": "^25.0.1",
         "markdown-link-check": "^3.8.6",
+        "node-sass": "^6.0.1",
         "opener": "^1.5.1",
         "prettier": "^2.1.2",
         "pretty-quick": "^3.1.0",
