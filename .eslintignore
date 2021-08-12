@@ -9,3 +9,4 @@ docs/
 plopfile.js
 jest.config.js
 commitlint.config.js
+stylelint-local-rules.js

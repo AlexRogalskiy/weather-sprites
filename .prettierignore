@@ -13,3 +13,5 @@ coverage
 dist
 data
 docs
+
+stylelint-local-rules.js

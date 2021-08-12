@@ -1,8 +1,18 @@
 {
     "extends": ["stylelint-config-standard", "stylelint-config-prettier", "stylelint-config-recommended"],
-    "plugins": ["stylelint-order", "stylelint-scss", "stylelint-prettier", "stylelint-selector-bem-pattern"],
+    "plugins": [
+        "stylelint-order",
+        "stylelint-scss",
+        "stylelint-prettier",
+        "stylelint-selector-bem-pattern",
+        "./stylelint-local-rules.js"
+    ],
     "rules": {
         "indentation": 4,
+        "selector-max-id": null,
+        "selector-no-vendor-prefix": null,
+        "shorthand-property-no-redundant-values": true,
+        "okta/no-absolute-urls": true,
         "no-invalid-position-at-import-rule": null,
         "scss/at-rule-no-unknown": true,
         "prettier/prettier": true,
@@ -23,11 +33,20 @@
         "max-empty-lines": null,
         "no-duplicate-selectors": null,
         "selector-pseudo-element-colon-notation": null,
-        "selector-class-pattern": null,
+        "declaration-bang-space-after": "never",
+        "declaration-bang-space-before": "always",
+        "declaration-block-no-duplicate-properties": [
+            true,
+            {
+                "ignore": ["consecutive-duplicates-with-different-values"]
+            }
+        ],
+        "selector-class-pattern": "[-a-z0-9]",
+        "selector-id-pattern": "[-a-z0-9]",
         "selector-no-qualifying-type": [
             true,
             {
-                "ignore": ["attribute", "class"]
+                "ignore": ["attribute", "class", "id"]
             }
         ],
         "plugin/selector-bem-pattern": {
@@ -53,6 +72,35 @@
                     "for"
                 ]
             }
+        ],
+        "unit-allowed-list": [
+            "ch",
+            "em",
+            "ex",
+            "rem",
+            "cm",
+            "in",
+            "mm",
+            "pc",
+            "pt",
+            "px",
+            "q",
+            "vh",
+            "vw",
+            "vmin",
+            "vmax",
+            "deg",
+            "grad",
+            "rad",
+            "turn",
+            "ms",
+            "s",
+            "Hz",
+            "kHz",
+            "dpi",
+            "dpcm",
+            "dppx",
+            "%"
         ]
     }
 }
