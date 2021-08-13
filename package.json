@@ -102,7 +102,7 @@
         "jest-cli": "27.0.4",
         "jest-emotion": "^11.0.0",
         "jsonlint": "^1.6.3",
-        "lerna": "^2.2.0",
+        "lerna": "4.0.0",
         "license-checker": "^25.0.1",
         "lint-staged": "^10.1.6",
         "markdown-link-check": "^3.8.6",
