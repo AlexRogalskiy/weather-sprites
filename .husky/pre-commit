@@ -4,9 +4,10 @@
 npm run lint:staged
 npm run all
 npm run changelog
+npm run changeset version
 
 git add api/
 git add core/
 
 git add **/README.md
-git add CHANGELOG.md
+git add **/CHANGELOG.md

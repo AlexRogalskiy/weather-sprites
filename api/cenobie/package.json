@@ -1,6 +1,6 @@
 {
     "name": "@weather-time/cenobie",
-    "version": "0.0.0",
+    "version": "1.0.0",
     "description": "Styled Weather sprites (Cenobie design)",
     "license": "GPL-3.0",
     "main": "dist/index.js",
@@ -49,7 +49,7 @@
         "all": "npm run format:all && npm run lint:all && npm run pretty && npm run bootstrap && npm run build:css"
     },
     "dependencies": {
-        "@weather-time/core": "0.0.2",
+        "@weather-time/core": "^0.0.2",
         "env-cmd": "^10.1.0",
         "lodash": "^4.17.20",
         "rollup": "^2.45.2"

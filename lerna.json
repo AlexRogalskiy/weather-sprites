@@ -26,5 +26,6 @@
             "exact": true,
             "message": "chore(release): publish"
         }
-    }
+    },
+    "ignoreChanges": ["**/CHANGELOG.md", "**/tests/**", "lerna.json", "package.json", "README.md"]
 }

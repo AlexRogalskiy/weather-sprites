@@ -16,6 +16,9 @@
         "lint:staged": "lint-staged --no-stash --allow-empty",
         "lint:style": "stylelint api/**/styles.css --config .stylelintrc.json --fix",
         "validate:commit": "validate-commit-msg",
+        "changeset": "changeset",
+        "changeset:publish": "changeset publish",
+        "syncpack": "syncpack list-mismatches",
         "pretty": "pretty-quick --staged --pattern '!test/tests/lint/**'",
         "license:report": "yarn licenses list > license_report.txt",
         "yarn-check": "yarn check --integrity || (echo '=> Please run `$ yarn bootstrap`' && exit 1)",
@@ -31,6 +34,9 @@
         "commit": "npx git-cz",
         "cm": "npm run commit --",
         "cz": "npm run commit --",
+        "update:deps": "npm update -i -r --latest",
+        "preinstall": "only-allow npm",
+        "setup": "npm install",
         "lerna:deps": "npm run bootstrap && lerna run --parallel --stream deps",
         "lerna:build": "npm run bootstrap && lerna run --parallel --stream all",
         "lerna:test": "npm run bootstrap && lerna run --parallel --stream test:all",
@@ -58,6 +64,8 @@
         "lodash": "^4.17.20"
     },
     "devDependencies": {
+        "@changesets/changelog-github": "^0.4.0",
+        "@changesets/cli": "^2.16.0",
         "@commitlint/cli": "^12.1.4",
         "@commitlint/config-conventional": "^12.1.4",
         "@commitlint/config-lerna-scopes": "^12.1.4",
@@ -97,6 +105,7 @@
         "license-checker": "^25.0.1",
         "lint-staged": "^10.1.6",
         "markdown-link-check": "^3.8.6",
+        "only-allow": "^1.0.0",
         "plop": "^2.7.4",
         "prettier": "^2.1.2",
         "pretty-quick": "^3.1.0",
@@ -114,9 +123,10 @@
         "stylelint-prettier": "^1.2.0",
         "stylelint-scss": "^3.18.0",
         "stylelint-selector-bem-pattern": "^2.1.0",
+        "syncpack": "^5.8.15",
         "ts-jest": "^27.0.2",
         "ts-node": ">=9.0.0",
-        "typescript": "^4.1.3",
+        "typescript": "^4.2.3",
         "validate-commit-msg": "^2.14.0"
     },
     "repository": {
