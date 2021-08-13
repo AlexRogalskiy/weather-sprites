@@ -62,7 +62,7 @@
         "all": "npm run format:all && npm run lint:all && npm run pretty"
     },
     "dependencies": {
-        "lodash": "^4.17.20"
+        "lodash": "4.17.21"
     },
     "devDependencies": {
         "@changesets/changelog-github": "^0.4.0",
