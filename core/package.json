@@ -3,7 +3,9 @@
     "version": "0.0.2",
     "description": "Styled Weather sprites (Core module)",
     "license": "GPL-3.0",
+    "source": "src/index.ts",
     "main": "dist/index.js",
+    "sideEffects": false,
     "scripts": {
         "format": "prettier --single-quote --write **/*.ts",
         "format:md": "remark-preset-davidtheclark --format",

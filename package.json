@@ -37,6 +37,7 @@
         "update:deps": "npm update -i -r --latest",
         "preinstall": "only-allow npm",
         "setup": "npm install",
+        "build:all": "npm run build --ws",
         "lerna:deps": "npm run bootstrap && lerna run --parallel --stream deps",
         "lerna:build": "npm run bootstrap && lerna run --parallel --stream all",
         "lerna:test": "npm run bootstrap && lerna run --parallel --stream test:all",

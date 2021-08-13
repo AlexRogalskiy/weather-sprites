@@ -3,7 +3,9 @@
     "version": "1.0.0",
     "description": "Styled Weather sprites (Alieza design)",
     "license": "GPL-3.0",
-    "main": "dist/index.js",
+    "source": "src/index.ts",
+    "main": "dist/lib/src/index.js",
+    "sideEffects": false,
     "scripts": {
         "format": "prettier --single-quote --write **/*.ts",
         "format:md": "remark-preset-davidtheclark --format",
