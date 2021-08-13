@@ -100,7 +100,7 @@
         "jest": "^27.0.4",
         "jest-circus": "^27.0.4",
         "jest-cli": "27.0.4",
-        "jest-emotion": "^11.0.0",
+        "jest-emotion": "11.0.0",
         "jsonlint": "^1.6.3",
         "lerna": "^2.2.0",
         "license-checker": "^25.0.1",
