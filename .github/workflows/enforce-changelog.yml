@@ -12,7 +12,7 @@ jobs:
     timeout-minutes: 10
     steps:
       - uses: actions/checkout@v2
-      - uses: dangoslen/changelog-enforcer@v1.6.1
+      - uses: dangoslen/changelog-enforcer@v2.3.1
         with:
           changeLogPath: 'CHANGELOG.md'
           skipLabels: 'Skip Changelog'
