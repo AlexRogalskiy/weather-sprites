@@ -5,8 +5,21 @@
     "npmClient": "npm",
     "useWorkspaces": true,
     "version": "independent",
-    "packages": ["api/*", "core/*"],
+    "packages": [
+        "api/*",
+        "core/*"
+    ],
     "command": {
+        "bootstrap": {
+            "hoist": true,
+            "noCi": true,
+            "npmClientArgs": [
+                "--no-package-lock"
+            ],
+            "nohoist": [
+                "egg"
+            ]
+        },
         "run": {
             "stream": true
         },
@@ -16,16 +29,32 @@
             "conventionalCommits": true,
             "forcePublish": true,
             "skipGit": true,
-            "allowBranch": ["main", "master"],
+            "allowBranch": [
+                "main",
+                "master"
+            ],
             "message": "chore(release): 🤖 publish package",
-            "registry": "https://registry.npmjs.org/"
+            "registry": "https://registry.npmjs.org/",
+            "ignoreChanges": [
+                "*.md"
+            ]
         },
         "version": {
-            "allowBranch": ["master", "release/*"],
+            "allowBranch": [
+                "master",
+                "release/*"
+            ],
             "conventionalCommits": true,
             "exact": true,
+            "createRelease": "github",
             "message": "chore(release): publish"
         }
     },
-    "ignoreChanges": ["**/CHANGELOG.md", "**/tests/**", "lerna.json", "package.json", "README.md"]
+    "ignoreChanges": [
+        "**/CHANGELOG.md",
+        "**/tests/**",
+        "lerna.json",
+        "package.json",
+        "README.md"
+    ]
 }

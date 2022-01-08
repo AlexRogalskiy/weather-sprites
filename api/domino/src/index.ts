@@ -52,6 +52,8 @@ const templates: Readonly<SpriteTemplateRecord> = {
     [SpritePattern.rain_sun]: rainSun,
     [SpritePattern.snowflake]: snowflake,
     [SpritePattern.storm_moon]: stormMoon,
+    [SpritePattern.snow_moon]: moon,
+    [SpritePattern.snow_sun]: sun,
     [SpritePattern.storm_sun]: stormSun,
     [SpritePattern.hail]: hail,
     [SpritePattern.haze]: haze,
