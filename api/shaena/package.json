@@ -58,7 +58,7 @@
         "@types/lodash.mergewith": "^4.6.6",
         "@types/prettier": "^2.1.5",
         "@typescript-eslint/eslint-plugin": "^4.26.0",
-        "@typescript-eslint/parser": "^4.26.0",
+        "@typescript-eslint/parser": "^5.9.1",
         "conventional-changelog-cli": "^2.0.0",
         "coveralls": "^3.0.0",
         "del-cli": "^3.0.1",
