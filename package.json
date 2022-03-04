@@ -6,6 +6,7 @@
     "private": true,
     "scripts": {
         "bootstrap": "lerna run bootstrap",
+        "update": "lernaupdate",
         "format": "prettier --single-quote --write **/*.{json,yaml,yml}",
         "format:md": "remark-preset-davidtheclark --format",
         "format:check": "prettier --check **/*.{json,yaml,yml}",
@@ -103,6 +104,7 @@
         "jest-emotion": "^11.0.0",
         "jsonlint": "^1.6.3",
         "lerna": "^4.0.0",
+        "lerna-update-wizard": "^1.1.1",
         "license-checker": "^25.0.1",
         "lint-staged": "^12.1.7",
         "markdown-link-check": "^3.9.0",
