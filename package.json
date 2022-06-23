@@ -107,7 +107,7 @@
         "lerna": "^4.0.0",
         "lerna-update-wizard": "^1.1.1",
         "license-checker": "^25.0.1",
-        "lint-staged": "^12.1.7",
+        "lint-staged": "^13.0.0",
         "markdown-link-check": "^3.9.0",
         "only-allow": "^1.0.0",
         "plop": "^3.0.5",
