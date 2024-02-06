@@ -97,7 +97,7 @@
         "remark-validate-links": "^10.0.2",
         "rollup-plugin-sourcemaps": "^0.6.3",
         "rollup-plugin-svg": "^2.0.0",
-        "rollup-plugin-typescript2": "^0.30.0",
+        "rollup-plugin-typescript2": "^0.36.0",
         "semantic-release": ">=17.2.3",
         "ts-jest": "^27.0.2",
         "ts-node": ">=9.0.0",
