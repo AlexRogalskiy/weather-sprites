@@ -54,7 +54,7 @@
         "@weather-time/core": "^0.0.2",
         "env-cmd": "^10.1.0",
         "lodash": "^4.17.20",
-        "rollup": "^2.45.2"
+        "rollup": "^4.0.0"
     },
     "devDependencies": {
         "@semantic-release/github": "^7.2.0",
