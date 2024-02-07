@@ -75,7 +75,7 @@
         "eslint-plugin-import": "^2.23.4",
         "eslint-plugin-jest": "^24.3.6",
         "eslint-plugin-node": "^11.1.0",
-        "eslint-plugin-prettier": "^3.4.0",
+        "eslint-plugin-prettier": "^5.0.0",
         "eslint-plugin-spellcheck": "0.0.17",
         "eslint-plugin-unicorn": "^33.0.1",
         "gradient-string": "^1.2.0",
